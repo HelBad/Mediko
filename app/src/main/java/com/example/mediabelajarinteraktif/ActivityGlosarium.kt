@@ -4,27 +4,26 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 
-class ActivityLatihan : AppCompatActivity() {
-    lateinit var btnStart: Button
-    lateinit var homeLatihan: ImageView
+class ActivityGlosarium : AppCompatActivity() {
+    lateinit var homeGlosarium: ImageView
+    lateinit var closeGlosarium: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_latihan)
+        setContentView(R.layout.activity_glosarium)
 
-        btnStart = findViewById(R.id.btnStart)
-        homeLatihan = findViewById(R.id.homeLatihan)
+        homeGlosarium = findViewById(R.id.homeGlosarium)
+        closeGlosarium = findViewById(R.id.closeGlosarium)
 
-        btnStart.setOnClickListener {
-            val intent = Intent(this, ActivitySoal::class.java)
+        homeGlosarium.setOnClickListener {
+            val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
-        homeLatihan.setOnClickListener {
-            val intent = Intent(this, ActivityUtama::class.java)
+        closeGlosarium.setOnClickListener {
+            val intent = Intent(this, ActivityKeluar::class.java)
             startActivity(intent)
         }
     }

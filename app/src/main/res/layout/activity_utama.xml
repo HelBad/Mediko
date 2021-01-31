@@ -317,6 +317,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/closeUtama"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

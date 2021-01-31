@@ -19,6 +19,27 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ActivityKeluar"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityIndikator"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityPetunjuk"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityProfil"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityRujukan"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityGlosarium"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivityPetakonsep"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".ActivitySoal"
             android:screenOrientation="landscape" />
         <activity
