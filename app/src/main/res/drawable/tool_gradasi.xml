@@ -6,7 +6,7 @@
     tools:ignore="MissingDefaultResource">
     <gradient
         android:angle="90"
-        android:endColor="#0022FF"
-        android:startColor="#0099FF"
+        android:endColor="@color/colorBlueDark"
+        android:startColor="@color/colorBlue"
         android:type="linear" />
 </shape>

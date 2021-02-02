@@ -1,29 +1,30 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.siswa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
+import com.example.mediabelajarinteraktif.ExitScreen
+import com.example.mediabelajarinteraktif.R
 
-class ActivityRujukan : AppCompatActivity() {
-    lateinit var homeRujukan: ImageView
-    lateinit var closeRujukan: ImageView
+class ActivityPetunjuk : AppCompatActivity() {
+    lateinit var homePetunjuk: ImageView
+    lateinit var closePetunjuk: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rujukan)
+        setContentView(R.layout.activity_petunjuk)
 
-        homeRujukan = findViewById(R.id.homeRujukan)
-        closeRujukan = findViewById(R.id.closeRujukan)
+        homePetunjuk = findViewById(R.id.homePetunjuk)
+        closePetunjuk = findViewById(R.id.closePetunjuk)
 
-        homeRujukan.setOnClickListener {
+        homePetunjuk.setOnClickListener {
             val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
-        closeRujukan.setOnClickListener {
-            val intent = Intent(this, ActivityKeluar::class.java)
+        closePetunjuk.setOnClickListener {
+            val intent = Intent(this, ExitScreen::class.java)
             startActivity(intent)
         }
     }

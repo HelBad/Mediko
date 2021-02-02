@@ -19,43 +19,46 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActivityKeluar"
+            android:name=".guru.ActivitySoal"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityIndikator"
+            android:name=".ExitScreen"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityPetunjuk"
+            android:name=".siswa.ActivityIndikator"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityProfil"
+            android:name=".siswa.ActivityPetunjuk"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityRujukan"
+            android:name=".siswa.ActivityProfil"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityGlosarium"
+            android:name=".siswa.ActivityRujukan"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityPetakonsep"
+            android:name=".siswa.ActivityGlosarium"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivitySoal"
+            android:name=".siswa.ActivityPetakonsep"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.ActivitySoal"
             android:screenOrientation="landscape" />
         <activity
             android:name=".WelcomeScreen"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityUtama"
+            android:name=".siswa.ActivityUtama"
             android:screenOrientation="landscape" />
         <activity
             android:name=".LoginScreen"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityLatihan"
+            android:name=".siswa.ActivityLatihan"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivityMateri"
+            android:name=".siswa.ActivityMateri"
             android:screenOrientation="landscape" />
     </application>
 

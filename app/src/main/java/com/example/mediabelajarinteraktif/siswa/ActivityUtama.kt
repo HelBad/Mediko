@@ -1,12 +1,13 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.siswa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
+import com.example.mediabelajarinteraktif.ExitScreen
+import com.example.mediabelajarinteraktif.R
 
 class ActivityUtama : AppCompatActivity() {
     lateinit var menuHome1: LinearLayout
@@ -66,7 +67,7 @@ class ActivityUtama : AppCompatActivity() {
             startActivity(intent)
         }
         closeUtama.setOnClickListener {
-            val intent = Intent(this, ActivityKeluar::class.java)
+            val intent = Intent(this, ExitScreen::class.java)
             startActivity(intent)
         }
     }

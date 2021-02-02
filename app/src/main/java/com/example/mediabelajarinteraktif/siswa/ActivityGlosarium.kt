@@ -1,11 +1,12 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.siswa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
+import com.example.mediabelajarinteraktif.ExitScreen
+import com.example.mediabelajarinteraktif.R
 
 class ActivityGlosarium : AppCompatActivity() {
     lateinit var homeGlosarium: ImageView
@@ -23,7 +24,7 @@ class ActivityGlosarium : AppCompatActivity() {
             startActivity(intent)
         }
         closeGlosarium.setOnClickListener {
-            val intent = Intent(this, ActivityKeluar::class.java)
+            val intent = Intent(this, ExitScreen::class.java)
             startActivity(intent)
         }
     }

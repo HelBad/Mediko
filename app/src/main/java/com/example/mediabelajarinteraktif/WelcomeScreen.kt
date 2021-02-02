@@ -11,7 +11,7 @@ class WelcomeScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcomescreen)
+        setContentView(R.layout.screen_welcome)
 
         btnNext = findViewById(R.id.btnNext)
         btnNext.setOnClickListener {

@@ -1,24 +1,14 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.siswa
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import com.example.mediabelajarinteraktif.siswa.ActivityUtama
+import com.example.mediabelajarinteraktif.R
 
-class LoginScreen : AppCompatActivity() {
-    lateinit var btnLogin: Button
-
+class ActivitySoal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.screen_login)
-
-        btnLogin = findViewById(R.id.btnLogin)
-        btnLogin.setOnClickListener {
-            val intent = Intent(this, ActivityUtama::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.activity_soal)
     }
 
     override fun onStart() {

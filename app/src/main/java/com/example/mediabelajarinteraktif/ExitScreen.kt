@@ -1,23 +1,26 @@
 package com.example.mediabelajarinteraktif
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
-class LoginScreen : AppCompatActivity() {
-    lateinit var btnLogin: Button
+class ExitScreen : AppCompatActivity() {
+    lateinit var btnYes: Button
+    lateinit var btnNo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.screen_login)
+        setContentView(R.layout.screen_exit)
 
-        btnLogin = findViewById(R.id.btnLogin)
-        btnLogin.setOnClickListener {
-            val intent = Intent(this, ActivityUtama::class.java)
-            startActivity(intent)
+        btnYes = findViewById(R.id.btnYes)
+        btnNo = findViewById(R.id.btnNo)
+
+        btnYes.setOnClickListener {
+            finishAffinity()
+        }
+        btnNo.setOnClickListener {
+            finish()
         }
     }
 

@@ -15,7 +15,7 @@ class LoadingScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_loadingscreen)
+        setContentView(R.layout.screen_loading)
 
         mDelayHandler = Handler()
         mDelayHandler!!.postDelayed(mRunnable, SplashDelay)

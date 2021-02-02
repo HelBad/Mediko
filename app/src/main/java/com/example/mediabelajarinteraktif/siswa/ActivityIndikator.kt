@@ -1,29 +1,30 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.siswa
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
-import android.widget.LinearLayout
+import com.example.mediabelajarinteraktif.ExitScreen
+import com.example.mediabelajarinteraktif.R
 
-class ActivityPetakonsep : AppCompatActivity() {
-    lateinit var homePeta: ImageView
-    lateinit var closePeta: ImageView
+class ActivityIndikator : AppCompatActivity() {
+    lateinit var homeIndikator: ImageView
+    lateinit var closeIndikator: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_petakonsep)
+        setContentView(R.layout.activity_indikator)
 
-        homePeta = findViewById(R.id.homePeta)
-        closePeta = findViewById(R.id.closePeta)
+        homeIndikator = findViewById(R.id.homeIndikator)
+        closeIndikator = findViewById(R.id.closeIndikator)
 
-        homePeta.setOnClickListener {
+        homeIndikator.setOnClickListener {
             val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
-        closePeta.setOnClickListener {
-            val intent = Intent(this, ActivityKeluar::class.java)
+        closeIndikator.setOnClickListener {
+            val intent = Intent(this, ExitScreen::class.java)
             startActivity(intent)
         }
     }
