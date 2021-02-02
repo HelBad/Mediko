@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".guru.ActivityNilai"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".guru.ActivitySoal"
             android:screenOrientation="landscape" />
         <activity
