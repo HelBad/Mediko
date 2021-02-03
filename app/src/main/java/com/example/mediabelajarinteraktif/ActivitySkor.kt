@@ -11,8 +11,13 @@ class ActivitySkor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skor)
 
+        btnTryAgain.setOnClickListener {
+            val intent = Intent(this, ActivityLatihan::class.java)
+            startActivity(intent)
+        }
+
         btnSubmit.setOnClickListener {
-            val intent = Intent(this, ActivitySkor::class.java)
+            val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
     }
