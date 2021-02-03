@@ -1,13 +1,20 @@
 package com.example.mediabelajarinteraktif
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import kotlinx.android.synthetic.main.activity_soal.*
 
 class ActivitySoal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soal)
+
+        btnSubmit.setOnClickListener {
+            val intent = Intent(this, ActivitySkor::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {
