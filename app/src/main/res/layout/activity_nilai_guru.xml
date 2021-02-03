@@ -34,6 +34,24 @@
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNilai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarNilaiGuru"
+        android:layout_toRightOf="@id/soalNilaiGuru"
+        android:layout_toLeftOf="@id/closeNilaiGuru"
+        android:layout_marginBottom="15dp"
+        tools:listitem="@layout/card_nilai"/>
+
+    <ImageView
+        android:id="@+id/soalNilaiGuru"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/icon_soal"/>
+
     <ImageView
         android:id="@+id/closeNilaiGuru"
         android:layout_width="50dp"

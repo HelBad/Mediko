@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.mediabelajarinteraktif.guru.ActivitySoal
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
 class LoginScreen : AppCompatActivity() {
@@ -16,7 +17,7 @@ class LoginScreen : AppCompatActivity() {
 
         btnLogin = findViewById(R.id.btnLogin)
         btnLogin.setOnClickListener {
-            val intent = Intent(this, ActivityUtama::class.java)
+            val intent = Intent(this, ActivitySoal::class.java)
             startActivity(intent)
         }
     }

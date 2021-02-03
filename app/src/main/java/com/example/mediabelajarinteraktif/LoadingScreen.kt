@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import kotlinx.android.synthetic.main.activity_loadingscreen.*
+import kotlinx.android.synthetic.main.screen_loading.*
 
 class LoadingScreen : AppCompatActivity() {
     private val SplashDelay: Long = 2000 //6 seconds
