@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/logo_apk"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActivitySkor"></activity>
         <activity
             android:name=".LoadingScreen"
             android:screenOrientation="landscape">
