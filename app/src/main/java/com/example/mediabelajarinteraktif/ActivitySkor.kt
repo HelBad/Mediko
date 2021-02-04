@@ -1,18 +1,23 @@
-package com.example.mediabelajarinteraktif.siswa.latihan
+package com.example.mediabelajarinteraktif
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import kotlinx.android.synthetic.main.activity_soal.*
+import kotlinx.android.synthetic.main.activity_skor.*
 
-class ActivitySoal : AppCompatActivity() {
+class ActivitySkor : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_soal)
+        setContentView(R.layout.activity_skor)
+
+        btnTryAgain.setOnClickListener {
+            val intent = Intent(this, ActivityLatihan::class.java)
+            startActivity(intent)
+        }
 
         btnSubmit.setOnClickListener {
-            val intent = Intent(this, ActivitySkor::class.java)
+            val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
     }

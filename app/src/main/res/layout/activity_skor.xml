@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ActivitySkor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/logo_unesa"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_apk"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LATIHAN SOAL / Mediko"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarSoal"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="Your Result: "
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttons"
+        android:layout_below="@id/textSoal"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:text="Nama: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textNoAbsen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="No Absen: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textKelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Kelas: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Correct questions: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textIncorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Incorrect questions: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Time elapsed: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textFinalScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="Final score: "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textLulus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginHorizontal="50dp"
+                android:text="LULUS "
+                android:textColor="@android:color/black"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTryAgain"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorOrange"
+            android:text="Try Again"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorOrange"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
