@@ -59,6 +59,9 @@ interface Services {
     @FormUrlEncoded
     fun submitNilai(
         @Field("id") id: Int,
-        @Field("nilai") nilai: Int
+        @Field("nilai") nilai: Int,
+        @Field("nama") nama: Int,
+        @Field("no_absen") noAbsen: Int,
+        @Field("kelas") kelas: Int
     ): Call<String>
 }
