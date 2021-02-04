@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.materi.ActivityPengertianapbn">
+    tools:context=".siswa.materi.ActivitySumberapbn">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarPengertianapbn"
+        android:id="@+id/toolbarSumberapbn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize">
@@ -37,22 +37,22 @@
     </androidx.appcompat.widget.Toolbar>
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/animasiPengertianapbn"
+        android:id="@+id/animasiSumberapbn"
         android:layout_width="160dp"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarPengertianapbn"
+        android:layout_below="@id/toolbarSumberapbn"
         android:src="@drawable/animasi_guruperempuan" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarPengertianapbn"
-        android:layout_toLeftOf="@id/menuPengertianapbn"
-        android:layout_toRightOf="@id/animasiPengertianapbn"
+        android:layout_below="@id/toolbarSumberapbn"
+        android:layout_toLeftOf="@id/menuSumberapbn"
+        android:layout_toRightOf="@id/animasiSumberapbn"
         android:layout_marginBottom="15dp"
         android:background="@drawable/bg_papan1">
         <ScrollView
-            android:id="@+id/scrollPengertianapbn"
+            android:id="@+id/scrollSumberapbn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginVertical="12dp"
@@ -65,41 +65,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:text="-	Pengertian APBN"
+                    android:text="-	Sumber Penerimaan Negara"
                     android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
+                    android:fontFamily="@font/comic_sans_ms_regular"
                     android:textStyle="bold"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Menurut Undang-Undang Republik Indonesia Nomor 20 Tahun 2019 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2020, dikatakan APBN adalah rencana keuangan tahunan pemerintahan negara yang disetujui oleh Dewan Perwakilan Rakyat (DPR). Dapat dikatakan juga APBN merupakan suatu daftar yang memuat rincian pendapatan dan pengeluaran negara untuk waktu tertentu, biasanya satu tahun."
-                    android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="-	Fungsi APBN"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Anggaran Pendapatan dan Belanja Negara (APBN) memiliki fungsi sebagai berikut :"
-                    android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
                     android:textColor="@android:color/white"/>
 
                 <LinearLayout
@@ -113,16 +82,66 @@
                         android:layout_marginRight="10dp"
                         android:text="a."
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi Otorisasi, artinya anggaran negara menjadi dasar untuk melaksanakan pendapatan dan belanja pada tahun yang bersangkutan."
+                        android:text="Penerimaan pajak, merupakan semua penerimaan yang terdiri dari :"
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="1)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pajak dalam negeri adalah semua penerimaan negara yang berasal dari pajak penghasilan, pajak pertambahan nilai barang dan jasa, pajak bumi dan bangunan, pendapatan cukai, dan pajak lainnya."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="2)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pajak perdagangan internasional adalah semua penerimaan negara yang berasal dari pendapatan bea masuk dan bea keluar."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -137,18 +156,29 @@
                         android:layout_marginRight="10dp"
                         android:text="b."
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi Perencanaan, artinya anggaran negara menjadi pedoman untuk manajemen dalam merencanakan kegiatan pada tahun yang bersangkutan."
+                        android:text="Penerimaan negara bukan pajak"
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Yang disingkat dengan PNBP adalah semua penerimaan pemerintah pusat yang diterima dalam bentuk penerimaan dalam bentuk penerimaan sumber daya alam (SDA), bagian pemerintah atas laba Badan Usaha Milik Negara (BUMN), PNBP lainnya (berasal dari pungutan yang dikelola oleh lembaga yang berhubungan dengan pelayanan masyarakat), serta pendapatan badan layanan umum (BLU)."
+                    android:textSize="14dp"
+                    android:fontFamily="@font/comic_sans_ms_regular"
+                    android:textColor="@android:color/white"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -161,111 +191,29 @@
                         android:layout_marginRight="10dp"
                         android:text="c."
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi pengawasan, artinya anggaran negara menjadi pedoman untuk menilai kesesuaian kegiatan penyelenggaraan pemerintah negara dengan ketentuan yang ditetapkan."
+                        android:text="Hibah"
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
+                        android:fontFamily="@font/comic_sans_ms_regular"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:text="d."
-                        android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Fungsi Alokasi, artinya anggaran negara harus diarahkan untuk mengurangi pengangguran dan meningkatkan perekonomian. Pendapatan negara paling besar yaitu pajak, penghasilan dari pajak yang diterima dapat dialokasikan ke sektor pembangunan sarana umum."
-                        android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:text="e."
-                        android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Fungsi Distribusi, artinya kebijakan anggaran negara harus memperhatikan keadilan dan kepatutan, misalnya dalam bentuk dana subsidi (beras untuk warga kurang mampu dan pendidikan) dan dana pensiun."
-                        android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:text="f."
-                        android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Fungsi Stabilisasi, artinya anggaran berfungsi sebagai pedoman agar pendapatan dan pengeluaran negara teratur sesuai dengan yang ditetapkan. APBN dijadikan alat untuk menjaga kestabilan arus uang dan barang untuk mencegah terjadinya inflasi atau deflasi."
-                        android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc_regular"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="-	Tujuan Penyusunan APBN"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="35dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Pemerintah menyususn APBN dengan tujuan untuk menciptakan efisiensi dan keadilan dalam menyediakan barang dan jasa publik. Selian itu APBN juga digunakan sebagai pedoman penerimaan dan pengeluaran negara dalam melaksanakan kegiatan kenegaraan, meningkatkan kesempatan kerja, dan meningkatkan pertumbuhan ekonomi. Berdasarkan UUD 1945 pasal 23 ayat (1) disebutkan tujuan APBN digunakan untuk mengatur kegiatan perekonomian nasional."
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Semua penerimaan negara dalam bentuk devisa dan atau devisa yang dirupiahkan, rupiah, maupun dalam bentuk barang, jasa, dan surat berharga yang diperoleh dari pemberi hibah yang tidak perlu dibayar kembali dan yang tidak mengikat, baik yang berasal dari dalam negeri maupun dari luar negeri. Contoh hibah yang pernah diterima pemerintah Indonesia yaitu pada tahun 2018 Uni Eropa beri Indonesia hibah perdagangan sebesar Rp 168 miliar."
                     android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc_regular"
+                    android:fontFamily="@font/comic_sans_ms_regular"
                     android:textColor="@android:color/white"/>
             </LinearLayout>
         </ScrollView>
@@ -279,14 +227,14 @@
             android:layout_marginBottom="15dp"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/scrollupPengertianapbn"
+                android:id="@+id/scrollupSumberapbn"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/btn_scrollup"/>
 
             <Button
-                android:id="@+id/scrolldownPengertianapbn"
+                android:id="@+id/scrolldownSumberapbn"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:background="@drawable/btn_scrolldown"/>
@@ -294,7 +242,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/menuPengertianapbn"
+        android:id="@+id/menuSumberapbn"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
@@ -302,7 +250,7 @@
         android:layout_alignParentEnd="true"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/pengertianapbnSumber"
+            android:id="@+id/sumberapbnPengertian"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -323,7 +271,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Sumber penerimaan"
+                android:text="Pengertian, fungsi, tujuan"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
@@ -331,7 +279,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnJenis"
+            android:id="@+id/sumberapbnJenis"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -360,7 +308,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnMekanisme"
+            android:id="@+id/sumberapbnMekanisme"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -389,7 +337,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnMateri"
+            android:id="@+id/sumberapbnMateri"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

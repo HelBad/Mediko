@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mediabelajarinteraktif">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,6 @@
         android:roundIcon="@drawable/logo_apk"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivitySkor"></activity>
         <activity
             android:name=".LoadingScreen"
             android:screenOrientation="landscape">
@@ -21,6 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".siswa.materi.ActivityMekanismeapbn"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityJenisapbn"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivitySumberapbn"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ActivitySkor"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".siswa.materi.ActivityPengertianapbn"
             android:screenOrientation="landscape" />

@@ -30,22 +30,22 @@ class ActivityApbn : AppCompatActivity() {
             val intent = Intent(this, ActivityPengertianapbn::class.java)
             startActivity(intent)
         }
-//        apbnSumber.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
-//        apbnJenis.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
-//        apbnMekanisme.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
-//        materiApbn.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
+        apbnSumber.setOnClickListener {
+            val intent = Intent(this, ActivitySumberapbn::class.java)
+            startActivity(intent)
+        }
+        apbnJenis.setOnClickListener {
+            val intent = Intent(this, ActivityJenisapbn::class.java)
+            startActivity(intent)
+        }
+        apbnMekanisme.setOnClickListener {
+            val intent = Intent(this, ActivityMekanismeapbn::class.java)
+            startActivity(intent)
+        }
+        materiApbn.setOnClickListener {
+            val intent = Intent(this, ActivityMateri::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onStart() {
