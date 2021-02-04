@@ -13,7 +13,6 @@ interface Services {
     fun login(@Field("username") username: String): Call<User>
 
     @POST("soal")
-    @FormUrlEncoded
     fun getSoal(): Call<List<Soal>>
 
     @POST("soal")
@@ -54,7 +53,6 @@ interface Services {
     fun getUser(@Field("id") id: Int): Call<User>
 
     @POST("nilai")
-    @FormUrlEncoded
     fun getNilai(): Call<List<User>>
 
     @POST("submit_nilai")
