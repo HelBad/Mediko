@@ -11,7 +11,7 @@ class LoadingScreen : AppCompatActivity() {
     private val splashDelay: Long = 2000 //6 seconds
     private var mDelayHandler: Handler? = null
     private var progressStatus = 0
-    var dummy:Int = 0
+    private var dummy = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
