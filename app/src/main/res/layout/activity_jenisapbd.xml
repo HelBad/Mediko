@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.materi.ActivityPengertianapbn">
+    tools:context=".siswa.materi.ActivityJenisapbd">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarPengertianapbn"
+        android:id="@+id/toolbarJenisapbd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize">
@@ -30,29 +30,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="APBN / Mediko"
+            android:text="APBD / Mediko"
             android:textSize="18dp"
             android:textColor="@android:color/black"
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/animasiPengertianapbn"
+        android:id="@+id/animasiJenisapbd"
         android:layout_width="160dp"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarPengertianapbn"
+        android:layout_below="@id/toolbarJenisapbd"
         android:src="@drawable/animasi_guruperempuan" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarPengertianapbn"
-        android:layout_toLeftOf="@id/menuPengertianapbn"
-        android:layout_toRightOf="@id/animasiPengertianapbn"
+        android:layout_below="@id/toolbarJenisapbd"
+        android:layout_toLeftOf="@id/menuJenisapbd"
+        android:layout_toRightOf="@id/animasiJenisapbd"
         android:layout_marginBottom="15dp"
         android:background="@drawable/bg_papan1">
         <ScrollView
-            android:id="@+id/scrollPengertianapbn"
+            android:id="@+id/scrollJenisapbd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginVertical="12dp"
@@ -65,9 +65,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:text="-	Pengertian APBN"
+                    android:text="- Jenis Belanja Daerah APBD"
                     android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc"
+                    android:fontFamily="@font/comic_sans_ms"
                     android:textStyle="bold"
                     android:textColor="@android:color/white"/>
 
@@ -76,30 +76,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginHorizontal="20dp"
-                    android:text="Menurut Undang-Undang Republik Indonesia Nomor 20 Tahun 2019 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2020, dikatakan APBN adalah rencana keuangan tahunan pemerintahan negara yang disetujui oleh Dewan Perwakilan Rakyat (DPR). Dapat dikatakan juga APBN merupakan suatu daftar yang memuat rincian pendapatan dan pengeluaran negara untuk waktu tertentu, biasanya satu tahun."
+                    android:text="Pengeluaran atau belanja daerah digunakan untuk mendanai pelaksanaan urusan pemerintahan yang menjadi kewenangan propinsi atau kabupaten/kota. Belanja daerah terdiri dari :"
                     android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="-	Fungsi APBN"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Anggaran Pendapatan dan Belanja Negara (APBN) memiliki fungsi sebagai berikut :"
-                    android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc"
+                    android:fontFamily="@font/comic_sans_ms"
                     android:textColor="@android:color/white"/>
 
                 <LinearLayout
@@ -113,16 +92,216 @@
                         android:layout_marginRight="10dp"
                         android:text="a."
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi Otorisasi, artinya anggaran negara menjadi dasar untuk melaksanakan pendapatan dan belanja pada tahun yang bersangkutan."
+                        android:text="Belanja Tidak Langsung, terdiri dari :"
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="1)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja pegawai, yaitu belanja kompensasi dalam bentuk gaji, tunjangan, dan oenghasilan lain yang diberikan kepada pegawai negeri sipil (PNS) sesuai dengan ketentuan dalam perundangn-undangan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="2)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja bunga, yaitu belanja yang dialokasikan untuk anggaran pembayaran bunga utang sebagai akibat kewajiban pokok utang."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="3)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja subsidi, yaitu belanja yang diberikan kepada lembaga tertentu agar harga jual dari hasil produksi terjangkau oleh masyarakat yang daya belinya terbatas."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="4)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja hibah, yaitu belanja berupa bantuan tidak mengikat dan dialokasikan sesuai syarat yang ditetapkan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="5)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bantuan sosial, yaitu belanja yang dialokasikan untuk memberi bantuan kepada masyarakat dalam bentuk uang atau barang guna meningkatkan kesejahteraan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="6)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja bagi hasil, yaitu belanja yang dialokasikan untuk dana bagi hasil yang berasal dari pendapatan propinsi kepada pemerintah kabupaten/kota sesuai dengan undang-undang."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="7)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Bantuan keuangan, yaitu belanja digunakan sebagai bantuan keuangan khusus dan umum dari propinsi kepada kabupaten, desa, serta pemerintah daerah lain guna meningkatkan pemerataan kemampuan keuangan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="8)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja tidak terduga, yaitu belanja untuk kegiatan tidak terduga dialokasikan untuk mendanai kebutuhan daerah yang tidak terduga untuk dilaksanakan tetapi belum ada anggaran."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -137,16 +316,16 @@
                         android:layout_marginRight="10dp"
                         android:text="b."
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi Perencanaan, artinya anggaran negara menjadi pedoman untuk manajemen dalam merencanakan kegiatan pada tahun yang bersangkutan."
+                        android:text="Belanja Langsung, dapat dikelompokkan sebagai berikut :"
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -154,23 +333,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:text="c."
+                        android:text="1)"
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi pengawasan, artinya anggaran negara menjadi pedoman untuk menilai kesesuaian kegiatan penyelenggaraan pemerintah negara dengan ketentuan yang ditetapkan."
+                        android:text="Pelaksanaan urusan pemerintahan daerah, terdiri atas urusan wajib dan urusan pilihan. Belanja langsung dituangkan dalam bentuk program yang manfaatnya dapat dirasakan langsung oleh masyarakat dalam rangka peningkatan kualitas pelayanan publik."
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -178,95 +358,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
-                        android:text="d."
+                        android:text="2)"
                         android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Fungsi Alokasi, artinya anggaran negara harus diarahkan untuk mengurangi pengangguran dan meningkatkan perekonomian. Pendapatan negara paling besar yaitu pajak, penghasilan dari pajak yang diterima dapat dialokasikan ke sektor pembangunan sarana umum."
+                        android:text="Belanja barang dan jasa, yaitu belanja yang dialokasikan untuk pembelian barang yang nilai manfaatnya kurang dari satu tahun dan/pemakaian jasa dalam pelaksanaan program kegiatan pemerintah daerah. Belanja barang dan jasa mencakup barang habis pakai, jasa kantor, premi asuransu, sewa saran transportasi, sewa alat berat, serta perjalanan dinas dan pemulangan pegawai."
                         android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:text="e."
-                        android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Fungsi Distribusi, artinya kebijakan anggaran negara harus memperhatikan keadilan dan kepatutan, misalnya dalam bentuk dana subsidi (beras untuk warga kurang mampu dan pendidikan) dan dana pensiun."
-                        android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="10dp"
-                        android:text="f."
-                        android:textSize="15dp"
-                        android:fontFamily="@font/tempus_sans_itc"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/white"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="Fungsi Stabilisasi, artinya anggaran berfungsi sebagai pedoman agar pendapatan dan pengeluaran negara teratur sesuai dengan yang ditetapkan. APBN dijadikan alat untuk menjaga kestabilan arus uang dan barang untuk mencegah terjadinya inflasi atau deflasi."
-                        android:textSize="14dp"
-                        android:fontFamily="@font/tempus_sans_itc"
-                        android:textColor="@android:color/white"/>
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="-	Tujuan Penyusunan APBN"
-                    android:textSize="15dp"
-                    android:fontFamily="@font/tempus_sans_itc"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/white"/>
-
-                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="35dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Pemerintah menyususn APBN dengan tujuan untuk menciptakan efisiensi dan keadilan dalam menyediakan barang dan jasa publik. Selian itu APBN juga digunakan sebagai pedoman penerimaan dan pengeluaran negara dalam melaksanakan kegiatan kenegaraan, meningkatkan kesempatan kerja, dan meningkatkan pertumbuhan ekonomi. Berdasarkan UUD 1945 pasal 23 ayat (1) disebutkan tujuan APBN digunakan untuk mengatur kegiatan perekonomian nasional."
-                    android:textSize="14dp"
-                    android:fontFamily="@font/tempus_sans_itc"
-                    android:textColor="@android:color/white"/>
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="3)"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Belanja modal, yaitu belanja yang dialokasikan untuk pengadaan atau pembangunan asset tetap berwujud dengan nilai manfaatnya lebih dari satu tahun. Asset digunakan untuk mendukung kegiatan pemerintah seperti tanah, peralatan mesin, gedung, jalan, irigasi, serta asset tetap lainnya."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/comic_sans_ms"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
@@ -279,14 +416,14 @@
             android:layout_marginBottom="15dp"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/scrollupPengertianapbn"
+                android:id="@+id/scrollupJenisapbd"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/btn_scrollup"/>
 
             <Button
-                android:id="@+id/scrolldownPengertianapbn"
+                android:id="@+id/scrolldownJenisapbd"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:background="@drawable/btn_scrolldown"/>
@@ -294,7 +431,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/menuPengertianapbn"
+        android:id="@+id/menuJenisapbd"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
@@ -302,7 +439,7 @@
         android:layout_alignParentEnd="true"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/pengertianapbnSumber"
+            android:id="@+id/jenisapbdPengertian"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -323,7 +460,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Sumber penerimaan"
+                android:text="Pengertian, fungsi, tujuan"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
@@ -331,7 +468,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnJenis"
+            android:id="@+id/jenisapbdSumber"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -352,7 +489,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Jenis belanja negara"
+                android:text="Sumber Penerimaan"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
@@ -360,7 +497,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnMekanisme"
+            android:id="@+id/jenisapbdMekanisme"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -389,7 +526,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/pengertianapbnMateri"
+            android:id="@+id/jenisapbdMateri"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

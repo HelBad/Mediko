@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.materi.ActivityMekanismeapbn">
+    tools:context=".siswa.materi.ActivityMekanismeapbd">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarMekanismeapbn"
+        android:id="@+id/toolbarMekanismeapbd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize">
@@ -30,29 +30,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="APBN / Mediko"
+            android:text="APBD / Mediko"
             android:textSize="18dp"
             android:textColor="@android:color/black"
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/animasiMekanismeapbn"
+        android:id="@+id/animasiMekanismeapbd"
         android:layout_width="160dp"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarMekanismeapbn"
+        android:layout_below="@id/toolbarMekanismeapbd"
         android:src="@drawable/animasi_guruperempuan" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbarMekanismeapbn"
-        android:layout_toLeftOf="@id/menuMekanismeapbn"
-        android:layout_toRightOf="@id/animasiMekanismeapbn"
+        android:layout_below="@id/toolbarMekanismeapbd"
+        android:layout_toLeftOf="@id/menuMekanismeapbd"
+        android:layout_toRightOf="@id/animasiMekanismeapbd"
         android:layout_marginBottom="15dp"
         android:background="@drawable/bg_papan1">
         <ScrollView
-            android:id="@+id/scrollMekanismeapbn"
+            android:id="@+id/scrollMekanismeapbd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginVertical="12dp"
@@ -65,9 +65,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
-                    android:text="-	Mekanisme Penyusunan APBN"
+                    android:text="-	Mekanisme Penyusunan APBD"
                     android:textSize="15dp"
-                    android:fontFamily="@font/comic_sans_ms"
+                    android:fontFamily="@font/tempus_sans_itc"
                     android:textStyle="bold"
                     android:textColor="@android:color/white"/>
 
@@ -76,37 +76,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginHorizontal="20dp"
-                    android:text="Pertama setiap departemen, lembaga, dan semua organisasi yang dibiayai oleh keuangan negara mengajukan usul atau rencana penerimaan dan pembelanjaan kepada presiden. Usul atau rencana tersebut dibahas kelompok kerja yang dibentuk untuk tujuan. Setelah disetujui, pemerintah mengajukan Rencana Anggaran Pendapatan dan Belanja Negara (RAPBN) ke DPR. Stelah dibahasan dan disetujui oleh DPR, RAPBN tersebut kemudian disahkan menjadi APBN melalui UU. Apabila RAPBN tidak disetujui DPR maka RAPBN harus diervisi kemudian diajukan kembali. Hak DPR dalam menetapkan anggaran disebut hak budget."
+                    android:text="Pertama pemerintah daerah menyusun Rancangan Anggaran Pendapatan dan Belanja Daerah (RAPBD), setelah itu pemerintah daerah mengajukan RAPBD kepada DPRD untuk dibahas bersama antara pemerintah daerah dan DPRD. Dalam pembahasan pemerintah daerah diwakili oleh tim anggaran eksekutif yang beranggotakan sekretaris daerah, Bappeda, dan pihak lain yang dianggap perlu. Sementara itu DPRD diwakili oleh panitia anggaran yang anggotanya terdiri atas fraksi di DPRD. Selanjutnya RAPBD disetujui oleh DPRD dan disahkan menjadi APBD berdasarkan peraturan daerah untuk dilaksanakan."
                     android:textSize="14dp"
-                    android:fontFamily="@font/comic_sans_ms"
+                    android:fontFamily="@font/tempus_sans_itc"
                     android:textColor="@android:color/white"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="Setelah mengetahui mekanisme penyusunan APBN, kita dapat mengetahui data keuangan APBN melalui tabel berikut."
-                    android:textSize="14dp"
-                    android:fontFamily="@font/comic_sans_ms"
-                    android:textColor="@android:color/white"/>
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="20dp"
-                    android:src="@drawable/tabel_mekanisme"
-                    android:scaleType="fitXY"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginHorizontal="20dp"
-                    android:text="-	Pengaruh APBN Terhadap Perekonomian"
+                    android:text="-	Pengaruh APBD terhadap Perekonomian"
                     android:textSize="15dp"
-                    android:fontFamily="@font/comic_sans_ms"
+                    android:fontFamily="@font/tempus_sans_itc"
                     android:textStyle="bold"
                     android:textColor="@android:color/white"/>
 
@@ -116,9 +98,9 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="35dp"
                     android:layout_marginHorizontal="20dp"
-                    android:text="Dengan APBN, dapat diketahui arah, tujuan, serta prioritas pembangunan yang akan dan sedang dilaksanakan. Pembangunan sarana dan prasarana ekonomi juga kaan meningkatkan produktivitas faktor-faktor tersebut yang dibarengi dengan peningkatan kualitas sumber daya manusia. Hasil produksi yang tidak dikonsumsi akan meningkatan tabungan masyarakat. Akhirnya, peningkatan tabungan akan meningkatkan investasi sehingga semakin banyak barang dan jasa yang tersedia bagi masyarakat."
+                    android:text="Apabila APBD dirancang sesuai dengan keadaan propinsi, kabupaten/kota, dan dilaksanakan dengan transparansi oleh aparatur pemerintah dalam pengawasan DPRD, APBD akan sangat membantu dalam upaya mengurangi kemiskinan, memperluas kesempatan kerja, memungkinkan daerah itu untuk mengadakan investasi baru, dan untuk mensejahterakan kehidupan rakyat secara berkelanjutan."
                     android:textSize="14dp"
-                    android:fontFamily="@font/comic_sans_ms"
+                    android:fontFamily="@font/tempus_sans_itc"
                     android:textColor="@android:color/white"/>
             </LinearLayout>
         </ScrollView>
@@ -132,14 +114,14 @@
             android:layout_marginBottom="15dp"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/scrollupMekanismeapbn"
+                android:id="@+id/scrollupMekanismeapbd"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:layout_marginRight="10dp"
                 android:background="@drawable/btn_scrollup"/>
 
             <Button
-                android:id="@+id/scrolldownMekanismeapbn"
+                android:id="@+id/scrolldownMekanismeapbd"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:background="@drawable/btn_scrolldown"/>
@@ -147,7 +129,7 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/menuMekanismeapbn"
+        android:id="@+id/menuMekanismeapbd"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
@@ -155,7 +137,7 @@
         android:layout_alignParentEnd="true"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/mekanismeapbnPengertian"
+            android:id="@+id/mekanismeapbdPengertian"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -184,7 +166,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/mekanismeapbnSumber"
+            android:id="@+id/mekanismeapbdSumber"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -213,7 +195,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/mekanismeapbnJenis"
+            android:id="@+id/mekanismeapbdJenis"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -242,7 +224,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/mekanismeapbnMateri"
+            android:id="@+id/mekanismeapbdMateri"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

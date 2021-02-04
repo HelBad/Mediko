@@ -30,14 +30,14 @@ class ActivityMateri : AppCompatActivity() {
             val intent = Intent(this, ActivityApbn::class.java)
             startActivity(intent)
         }
-//        menuMateri2.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
-//        menuMateri3.setOnClickListener {
-//            val intent = Intent(this, ::class.java)
-//            startActivity(intent)
-//        }
+        menuMateri2.setOnClickListener {
+            val intent = Intent(this, ActivityApbd::class.java)
+            startActivity(intent)
+        }
+        menuMateri3.setOnClickListener {
+            val intent = Intent(this, ActivityVideo::class.java)
+            startActivity(intent)
+        }
         homeMateri.setOnClickListener {
             val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)

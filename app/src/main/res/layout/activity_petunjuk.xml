@@ -60,6 +60,7 @@
                         android:layout_height="match_parent"
                         android:text="Petunjuk Penggunaan Media Pembelajaran Interaktif"
                         android:textSize="15dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
@@ -72,8 +73,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Sebelum kalian menggunakan media pembelajaran interaktif (MedIko), kalian harus tahu beberapa fungsi tombol di dalamnya. Cermati penjelasan fungsi tombol berikut ini."
+                        android:text="Sebelum kalian menggunakan media pembelajaran interaktif (Mediko), kalian harus tahu beberapa fungsi tombol di dalamnya. Cermati penjelasan fungsi tombol berikut ini."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -95,6 +97,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk masuk ke media dan melakukan login."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -116,6 +119,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk login user."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -137,6 +141,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk kembali ke halamanan menu home."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -158,6 +163,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk kembali ke menu materi."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -179,6 +185,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk scroll materi ke bawah."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -200,6 +207,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk scroll materi ke atas."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -221,6 +229,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk mengulang latihan soal."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -242,6 +251,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk lanjut ke pertanyaan selanjutnya."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -263,6 +273,7 @@
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk melihat pertanyaan sebelumnya."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -283,8 +294,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
-                        android:text=": Berfungsi untuk keluar dari media pembelajaran interaktif MedIko."
+                        android:text=": Berfungsi untuk keluar dari media pembelajaran interaktif Mediko."
                         android:textSize="14dp"
+                        android:fontFamily="@font/century_schoolbook"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
             </LinearLayout>

@@ -21,6 +21,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".siswa.materi.ActivityVideo"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivitySumberapbd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityPengertianapbd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityMekanismeapbd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityJenisapbd"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityApbd"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".siswa.materi.ActivityMekanismeapbn"
             android:screenOrientation="landscape" />
         <activity
@@ -30,7 +48,7 @@
             android:name=".siswa.materi.ActivitySumberapbn"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".ActivitySkor"
+            android:name=".siswa.latihan.ActivitySkor"
             android:screenOrientation="landscape" />
         <activity
             android:name=".siswa.materi.ActivityPengertianapbn"

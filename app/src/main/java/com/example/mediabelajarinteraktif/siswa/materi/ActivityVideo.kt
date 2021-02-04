@@ -1,19 +1,23 @@
-package com.example.mediabelajarinteraktif.siswa.latihan
+package com.example.mediabelajarinteraktif.siswa.materi
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import com.example.mediabelajarinteraktif.R
-import kotlinx.android.synthetic.main.activity_soal.*
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
-class ActivitySoal : AppCompatActivity() {
+class ActivityVideo : AppCompatActivity() {
+    lateinit var homeVideo: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_soal)
+        setContentView(R.layout.activity_video)
 
-        btnSubmit.setOnClickListener {
-            val intent = Intent(this, ActivitySkor::class.java)
+        homeVideo = findViewById(R.id.homeVideo)
+        homeVideo.setOnClickListener {
+            val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
         }
     }

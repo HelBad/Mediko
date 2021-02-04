@@ -6,10 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.materi.ActivityApbn">
+    tools:context=".siswa.materi.ActivityApbd">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarApbn"
+        android:id="@+id/toolbarApbd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize">
@@ -30,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="APBN / Mediko"
+            android:text="APBD / Mediko"
             android:textSize="18dp"
             android:textColor="@android:color/black"
             android:textStyle="bold"/>
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
         <Button
-            android:id="@+id/apbnPengertian"
+            android:id="@+id/apbdPengertian"
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
@@ -51,42 +51,42 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/apbnSumber"
+            android:id="@+id/apbdSumber"
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:background="@color/colorOrange"
-            android:layout_toRightOf="@id/apbnPengertian"
+            android:layout_toRightOf="@id/apbdPengertian"
             android:text="Sumber penerimaan"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/apbnJenis"
+            android:id="@+id/apbdJenis"
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:background="@color/colorOrange"
-            android:layout_below="@id/apbnSumber"
+            android:layout_below="@id/apbdSumber"
             android:text="Jenis belanja negara"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/apbnMekanisme"
+            android:id="@+id/apbdMekanisme"
             android:layout_width="240dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
             android:background="@color/colorOrange"
-            android:layout_toRightOf="@id/apbnJenis"
-            android:layout_below="@id/apbnSumber"
+            android:layout_toRightOf="@id/apbdJenis"
+            android:layout_below="@id/apbdSumber"
             android:text="Mekanisme penyusunan dan Pengaruh ekonomi"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <ImageView
-        android:id="@+id/materiApbn"
+        android:id="@+id/materiApbd"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"

@@ -67,7 +67,7 @@
                     android:layout_marginHorizontal="20dp"
                     android:text="-	Sumber Penerimaan Negara"
                     android:textSize="15dp"
-                    android:fontFamily="@font/comic_sans_ms_regular"
+                    android:fontFamily="@font/comic_sans_ms"
                     android:textStyle="bold"
                     android:textColor="@android:color/white"/>
 
@@ -82,7 +82,7 @@
                         android:layout_marginRight="10dp"
                         android:text="a."
                         android:textSize="15dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -91,7 +91,7 @@
                         android:layout_height="match_parent"
                         android:text="Penerimaan pajak, merupakan semua penerimaan yang terdiri dari :"
                         android:textSize="14dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -107,7 +107,7 @@
                         android:layout_marginRight="10dp"
                         android:text="1)"
                         android:textSize="15dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -116,7 +116,7 @@
                         android:layout_height="match_parent"
                         android:text="Pajak dalam negeri adalah semua penerimaan negara yang berasal dari pajak penghasilan, pajak pertambahan nilai barang dan jasa, pajak bumi dan bangunan, pendapatan cukai, dan pajak lainnya."
                         android:textSize="14dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -132,7 +132,7 @@
                         android:layout_marginRight="10dp"
                         android:text="2)"
                         android:textSize="15dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -141,7 +141,7 @@
                         android:layout_height="match_parent"
                         android:text="Pajak perdagangan internasional adalah semua penerimaan negara yang berasal dari pendapatan bea masuk dan bea keluar."
                         android:textSize="14dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -156,7 +156,7 @@
                         android:layout_marginRight="10dp"
                         android:text="b."
                         android:textSize="15dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -165,7 +165,7 @@
                         android:layout_height="match_parent"
                         android:text="Penerimaan negara bukan pajak"
                         android:textSize="14dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -177,7 +177,7 @@
                     android:layout_marginRight="20dp"
                     android:text="Yang disingkat dengan PNBP adalah semua penerimaan pemerintah pusat yang diterima dalam bentuk penerimaan dalam bentuk penerimaan sumber daya alam (SDA), bagian pemerintah atas laba Badan Usaha Milik Negara (BUMN), PNBP lainnya (berasal dari pungutan yang dikelola oleh lembaga yang berhubungan dengan pelayanan masyarakat), serta pendapatan badan layanan umum (BLU)."
                     android:textSize="14dp"
-                    android:fontFamily="@font/comic_sans_ms_regular"
+                    android:fontFamily="@font/comic_sans_ms"
                     android:textColor="@android:color/white"/>
 
                 <LinearLayout
@@ -191,7 +191,7 @@
                         android:layout_marginRight="10dp"
                         android:text="c."
                         android:textSize="15dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -200,7 +200,7 @@
                         android:layout_height="match_parent"
                         android:text="Hibah"
                         android:textSize="14dp"
-                        android:fontFamily="@font/comic_sans_ms_regular"
+                        android:fontFamily="@font/comic_sans_ms"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -213,7 +213,7 @@
                     android:layout_marginRight="20dp"
                     android:text="Semua penerimaan negara dalam bentuk devisa dan atau devisa yang dirupiahkan, rupiah, maupun dalam bentuk barang, jasa, dan surat berharga yang diperoleh dari pemberi hibah yang tidak perlu dibayar kembali dan yang tidak mengikat, baik yang berasal dari dalam negeri maupun dari luar negeri. Contoh hibah yang pernah diterima pemerintah Indonesia yaitu pada tahun 2018 Uni Eropa beri Indonesia hibah perdagangan sebesar Rp 168 miliar."
                     android:textSize="14dp"
-                    android:fontFamily="@font/comic_sans_ms_regular"
+                    android:fontFamily="@font/comic_sans_ms"
                     android:textColor="@android:color/white"/>
             </LinearLayout>
         </ScrollView>
