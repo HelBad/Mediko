@@ -1,10 +1,13 @@
 package com.example.mediabelajarinteraktif
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.mediabelajarinteraktif.guru.ActivitySoal
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
 class WelcomeScreen : AppCompatActivity() {
     lateinit var btnNext: Button
@@ -15,8 +18,17 @@ class WelcomeScreen : AppCompatActivity() {
 
         btnNext = findViewById(R.id.btnNext)
         btnNext.setOnClickListener {
-            val intent = Intent(this, LoginScreen::class.java)
-            startActivity(intent)
+            val sharedPref = getSharedPreferences("auth", Context.MODE_PRIVATE)
+            val id = sharedPref.getInt("id", 0)
+
+            if(id == 0){
+                val intent = Intent(this, LoginScreen::class.java)
+                startActivity(intent)
+            }
+            else{
+                val intent = Intent(this, ActivityUtama::class.java)
+                startActivity(intent)
+            }
         }
     }
 

@@ -8,17 +8,17 @@ import android.view.View
 import kotlinx.android.synthetic.main.screen_loading.*
 
 class LoadingScreen : AppCompatActivity() {
-    private val SplashDelay: Long = 2000 //6 seconds
+    private val splashDelay: Long = 2000 //6 seconds
     private var mDelayHandler: Handler? = null
     private var progressStatus = 0
-    var dummy:Int = 0
+    private var dummy = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.screen_loading)
 
         mDelayHandler = Handler()
-        mDelayHandler!!.postDelayed(mRunnable, SplashDelay)
+        mDelayHandler!!.postDelayed(mRunnable, splashDelay)
     }
 
     override fun onStart() {
@@ -30,7 +30,7 @@ class LoadingScreen : AppCompatActivity() {
     }
 
     private fun launchMainActivity() {
-        var intent = Intent(this, WelcomeScreen::class.java)
+        val intent = Intent(this, WelcomeScreen::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(intent)
         this.finish()
@@ -45,7 +45,7 @@ class LoadingScreen : AppCompatActivity() {
     }
 
     private val mRunnable: Runnable = Runnable {
-        Thread(Runnable {
+        Thread {
             while (progressStatus < 100) {
                 try {
                     dummy += 10
@@ -57,6 +57,6 @@ class LoadingScreen : AppCompatActivity() {
                 progressSplash.progress = progressStatus
             }
             launchMainActivity()
-        }).start()
+        }.start()
     }
 }
