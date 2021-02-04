@@ -29,7 +29,7 @@ class User(
 
     @SerializedName("user_level")
     @Expose
-    val user_level: Int?,
+    val user_level: Int = 0,
 
     @SerializedName("mapel")
     @Expose
