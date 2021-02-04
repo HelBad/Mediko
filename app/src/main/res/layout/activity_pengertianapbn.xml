@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".siswa.materi.ActivityPengertianapbn">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPengertianapbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/logo_unesa"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_apk"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="APBN / Mediko"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/animasiPengertianapbn"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarPengertianapbn"
+        android:src="@drawable/animasi_guruperempuan" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarPengertianapbn"
+        android:layout_toLeftOf="@id/menuPengertianapbn"
+        android:layout_toRightOf="@id/animasiPengertianapbn"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_papan">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/closeGlosarium"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_keluar"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="12dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="-	Pengertian APBN"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Menurut Undang-Undang Republik Indonesia Nomor 20 Tahun 2019 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2020, dikatakan APBN adalah rencana keuangan tahunan pemerintahan negara yang disetujui oleh Dewan Perwakilan Rakyat (DPR). Dapat dikatakan juga APBN merupakan suatu daftar yang memuat rincian pendapatan dan pengeluaran negara untuk waktu tertentu, biasanya satu tahun."
+                    android:textSize="14dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="-	Fungsi APBN"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Anggaran Pendapatan dan Belanja Negara (APBN) memiliki fungsi sebagai berikut :"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textColor="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="a."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi Otorisasi, artinya anggaran negara menjadi dasar untuk melaksanakan pendapatan dan belanja pada tahun yang bersangkutan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="b."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi Perencanaan, artinya anggaran negara menjadi pedoman untuk manajemen dalam merencanakan kegiatan pada tahun yang bersangkutan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="c."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi pengawasan, artinya anggaran negara menjadi pedoman untuk menilai kesesuaian kegiatan penyelenggaraan pemerintah negara dengan ketentuan yang ditetapkan."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="d."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi Alokasi, artinya anggaran negara harus diarahkan untuk mengurangi pengangguran dan meningkatkan perekonomian. Pendapatan negara paling besar yaitu pajak, penghasilan dari pajak yang diterima dapat dialokasikan ke sektor pembangunan sarana umum."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="e."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi Distribusi, artinya kebijakan anggaran negara harus memperhatikan keadilan dan kepatutan, misalnya dalam bentuk dana subsidi (beras untuk warga kurang mampu dan pendidikan) dan dana pensiun."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:text="f."
+                        android:textSize="15dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Fungsi Stabilisasi, artinya anggaran berfungsi sebagai pedoman agar pendapatan dan pengeluaran negara teratur sesuai dengan yang ditetapkan. APBN dijadikan alat untuk menjaga kestabilan arus uang dan barang untuk mencegah terjadinya inflasi atau deflasi."
+                        android:textSize="14dp"
+                        android:fontFamily="@font/tempus_sans_itc_reguler"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="-	Tujuan Penyusunan APBN"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Pemerintah menyususn APBN dengan tujuan untuk menciptakan efisiensi dan keadilan dalam menyediakan barang dan jasa publik. Selian itu APBN juga digunakan sebagai pedoman penerimaan dan pengeluaran negara dalam melaksanakan kegiatan kenegaraan, meningkatkan kesempatan kerja, dan meningkatkan pertumbuhan ekonomi. Berdasarkan UUD 1945 pasal 23 ayat (1) disebutkan tujuan APBN digunakan untuk mengatur kegiatan perekonomian nasional."
+                    android:textSize="14dp"
+                    android:fontFamily="@font/tempus_sans_itc_reguler"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menuPengertianapbn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/pengertianapbnSumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_apbd" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sumber penerimaan"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pengertianapbnJenis"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_video" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Jenis belanja negara"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pengertianapbnMekanisme"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icon_amplop" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Mekanisme penyusunan dan pengaruh ekonomi"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="11dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pengertianApbnMateri"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="25dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_materi" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Kembali ke halaman materi"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

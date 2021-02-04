@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.ActivityLatihan">
+    tools:context=".siswa.latihan.ActivityLatihan">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarLatihan"
         android:layout_width="match_parent"

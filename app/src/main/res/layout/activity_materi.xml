@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.ActivityMateri">
+    tools:context=".siswa.materi.ActivityMateri">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarMateri"
@@ -35,4 +35,135 @@
             android:textColor="@android:color/black"
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/animasiMateri"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarMateri"
+        android:layout_above="@id/homeMateri"
+        android:layout_margin="15dp"
+        android:src="@drawable/tes" />
+
+    <LinearLayout
+        android:id="@+id/kontenMateri1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/animasiMateri"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp">
+        <LinearLayout
+            android:id="@+id/menuMateri1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/btn_materi" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/menuApbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="APBN"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuMateri2"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu_apbd" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/menuApbd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="APBD"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuMateri3"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu_video" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/menuVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Video"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/homeMateri"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/icon_rumah"/>
+
+    <ImageView
+        android:id="@+id/closeMateri"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/icon_keluar"/>
 </RelativeLayout>

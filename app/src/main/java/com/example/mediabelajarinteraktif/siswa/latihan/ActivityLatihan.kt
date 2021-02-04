@@ -1,4 +1,4 @@
-package com.example.mediabelajarinteraktif.siswa
+package com.example.mediabelajarinteraktif.siswa.latihan
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import com.example.mediabelajarinteraktif.R
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
 class ActivityLatihan : AppCompatActivity() {
     lateinit var btnStart: Button

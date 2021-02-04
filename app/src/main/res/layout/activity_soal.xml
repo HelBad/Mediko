@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".siswa.ActivitySoal">
+    tools:context=".siswa.latihan.ActivitySoal">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarSoal"
         android:layout_width="match_parent"

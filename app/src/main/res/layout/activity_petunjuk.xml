@@ -73,7 +73,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="Sebelum kalian menggunakan media pembelajaran interaktif (MedIko), kalian harus tahu beberapa fungsi tombol di dalamnya. Cermati penjelasan fungsi tombol berikut ini."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -83,7 +83,49 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp">
                     <ImageView
-                        android:layout_width="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_nexttostart"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk masuk ke media dan melakukan login."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_login1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk login user."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="15dp"
@@ -94,7 +136,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk kembali ke halamanan menu home."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -104,7 +146,134 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginHorizontal="20dp">
                     <ImageView
-                        android:layout_width="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_materi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk kembali ke menu materi."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_scrolldown"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk scroll materi ke bawah."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_scrollup"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk scroll materi ke atas."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/btn_tryagain"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk mengulang latihan soal."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/icon_lanjut"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk lanjut ke pertanyaan selanjutnya."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/icon_kembali"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=": Berfungsi untuk melihat pertanyaan sebelumnya."
+                        android:textSize="14dp"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="20dp">
+                    <ImageView
+                        android:layout_width="50dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="15dp"
@@ -115,10 +284,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
                         android:text=": Berfungsi untuk keluar dari media pembelajaran interaktif MedIko."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
-
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>

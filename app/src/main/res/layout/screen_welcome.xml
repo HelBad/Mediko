@@ -45,10 +45,9 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="160dp"
+        android:layout_width="150dp"
         android:layout_height="60dp"
-        android:text="Next to Start"
-        android:background="@drawable/tool_oval"
+        android:background="@drawable/btn_nexttostart"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"

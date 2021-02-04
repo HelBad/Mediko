@@ -68,7 +68,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peraturan Menteri Dalam Negeri Republik Indonesia Nomor 33 / Permendagri / 2019 tentang Pedoman Penyusunan Anggaran Pendapatan dan Belanja Daerah Tahun Anggaran 2020."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -90,7 +90,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="S., Alam. 2016. Ekonomi Kelompok Peminatan Ilmu Pengetahuan Sosial untuk SMA/MA Kelas XI. Jakarta: Esis."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -112,7 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Sari, Kartika. 2017. Ekonomi Peminatan Ilmu-Ilmu Sosial. Klaten: PT. Intan Pariwara."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -134,7 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Undang-Undang Republik Indoniesia Nomor 20 Tahun 2019 tentang Anggaran Pendapatan dan Belanja Negara Tahun Anggaran 2020."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
             </LinearLayout>

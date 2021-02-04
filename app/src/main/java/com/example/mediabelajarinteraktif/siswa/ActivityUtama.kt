@@ -8,6 +8,8 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.mediabelajarinteraktif.ExitScreen
 import com.example.mediabelajarinteraktif.R
+import com.example.mediabelajarinteraktif.siswa.latihan.ActivityLatihan
+import com.example.mediabelajarinteraktif.siswa.materi.ActivityMateri
 
 class ActivityUtama : AppCompatActivity() {
     lateinit var menuHome1: LinearLayout

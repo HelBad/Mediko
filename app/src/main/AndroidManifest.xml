@@ -19,6 +19,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".siswa.materi.ActivityPengertianapbn"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".siswa.materi.ActivityApbn"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".guru.ActivityNilai"
             android:screenOrientation="landscape" />
         <activity
@@ -46,7 +52,7 @@
             android:name=".siswa.ActivityPetakonsep"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".siswa.ActivitySoal"
+            android:name=".siswa.latihan.ActivitySoal"
             android:screenOrientation="landscape" />
         <activity
             android:name=".WelcomeScreen"
@@ -58,10 +64,10 @@
             android:name=".LoginScreen"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".siswa.ActivityLatihan"
+            android:name=".siswa.latihan.ActivityLatihan"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".siswa.ActivityMateri"
+            android:name=".siswa.materi.ActivityMateri"
             android:screenOrientation="landscape" />
     </application>
 

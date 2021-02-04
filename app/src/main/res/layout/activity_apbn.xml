@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".siswa.materi.ActivityApbn">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarApbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/logo_unesa"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_apk"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="APBN / Mediko"
+            android:textSize="18dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/apbnPengertian"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            android:text="Pengertian, Fungsi, Tujuan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/apbnSumber"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            android:layout_toRightOf="@id/apbnPengertian"
+            android:layout_below="@id/apbnPengertian"
+            android:text="Sumber penerimaan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/apbnJenis"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            android:layout_below="@id/apbnSumber"
+            android:text="Jenis belanja negara"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/apbnMekanisme"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@color/colorOrange"
+            android:layout_toRightOf="@id/apbnJenis"
+            android:layout_below="@id/apbnJenis"
+            android:text="Mekanisme penyusunan dan Pengaruh ekonomi"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/materiApbn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:src="@drawable/btn_materi"/>
+</RelativeLayout>

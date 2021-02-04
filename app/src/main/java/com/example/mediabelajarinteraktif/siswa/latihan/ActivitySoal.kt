@@ -1,14 +1,14 @@
-package com.example.mediabelajarinteraktif.siswa
+package com.example.mediabelajarinteraktif.siswa.latihan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.mediabelajarinteraktif.R
 
-class ActivityMateri : AppCompatActivity() {
+class ActivitySoal : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_materi)
+        setContentView(R.layout.activity_soal)
     }
 
     override fun onStart() {

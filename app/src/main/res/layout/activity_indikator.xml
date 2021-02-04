@@ -75,7 +75,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -83,7 +83,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Mendeskripsikan APBN dan APBD dalam pembangunan."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -97,7 +97,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="4.6."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Mengevaluasi peran APBN dan APBD terhadap pembangunan."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -134,7 +134,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.1."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -142,7 +142,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Mendeskripsikan pengertian APBN."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -156,7 +156,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.2."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -164,7 +164,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menyebutkan fungsi dan tujuan APBN."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -178,7 +178,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.3."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -186,7 +186,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menjelaskan sumber-sumber penerimaan negara."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -200,7 +200,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.4."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -208,7 +208,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menyebutkan jenis-jenis pengeluaran negara."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -222,7 +222,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.5."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -230,7 +230,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menjelaskan mekanisme penyusunan APBN."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -244,7 +244,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.6."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -252,7 +252,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menganalisis pengaruh APBN terhadap perekonomian."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -266,7 +266,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.7."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -274,7 +274,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Mendeskripsikan pengertian APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -288,7 +288,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.8."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -296,7 +296,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menyebutkan fungsi dan tujuan APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -310,7 +310,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.9."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -318,7 +318,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menjelaskan sumber-sumber penerimaan daerah."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -332,7 +332,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.10."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -340,7 +340,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menyebutkan jenis-jenis pengeluaran daerah."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -354,7 +354,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.11."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -362,7 +362,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menjelaskan mekanisme penyusunan APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -376,7 +376,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:text="3.6.12."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"/>
 
@@ -384,7 +384,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Menganalisis pengaruh APBD terhadap perekonomian."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -421,7 +421,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat mendeskripsikan pengertian APBN dan APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -443,7 +443,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat menyebutkan fungsi dan tujuan APBN dan APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -465,7 +465,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat menjelaskan sumber-sumber penerimaan negara dan daerah."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -487,7 +487,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat menyebutkan jenis-jenis pengeluaran negara dan daerah."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -509,7 +509,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat menjelaskan mekanisme penyusunan APBN dan APBD."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
 
@@ -531,7 +531,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Peserta didik dapat menganalisis pengaruh APBN dan APBD terhadap perekonomian."
-                        android:textSize="15dp"
+                        android:textSize="14dp"
                         android:textColor="@android:color/white"/>
                 </LinearLayout>
             </LinearLayout>
