@@ -21,6 +21,7 @@ import retrofit2.Response
 class ActivitySoal : AppCompatActivity() {
 
     private var listSoal : ArrayList<Soal> = ArrayList()
+    private var listJawaban : HashMap<Int, String> = HashMap()
     private var current = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -85,9 +86,14 @@ class ActivitySoal : AppCompatActivity() {
         soalTotal.text = listSoal.size.toString()
         textSoal.text = listSoal[current].soal
         pilihanA.text = "${listSoal[current].pilihanShuffle?.get(0)?.pilihan}"
+        pilihanA.isChecked = listJawaban[current] == "A"
         pilihanB.text = "${listSoal[current].pilihanShuffle?.get(1)?.pilihan}"
+        pilihanB.isChecked = listJawaban[current] == "B"
         pilihanC.text = "${listSoal[current].pilihanShuffle?.get(2)?.pilihan}"
+        pilihanC.isChecked = listJawaban[current] == "C"
         pilihanD.text = "${listSoal[current].pilihanShuffle?.get(3)?.pilihan}"
+        pilihanD.isChecked = listJawaban[current] == "D"
         pilihanE.text = "${listSoal[current].pilihanShuffle?.get(4)?.pilihan}"
+        pilihanE.isChecked = listJawaban[current] == "E"
     }
 }
