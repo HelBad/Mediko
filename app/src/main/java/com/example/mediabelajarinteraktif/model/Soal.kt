@@ -17,5 +17,7 @@ class Soal (
 
     @SerializedName("pilihan")
     @Expose
-    val pilihan: List<Pilihan>? = null
+    val pilihan: List<Pilihan>? = null,
+
+    var pilihanShuffle: MutableList<Pilihan>? = null
 ) : Parcelable

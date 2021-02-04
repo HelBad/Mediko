@@ -35,6 +35,10 @@ class ActivitySoal : AppCompatActivity() {
                         response.body().let {
                             if(it != null){
                                 listSoal = it as ArrayList<Soal>
+                                for (soal in listSoal){
+                                    soal.pilihanShuffle = soal.pilihan?.toMutableList()
+                                    soal.pilihanShuffle?.shuffle()
+                                }
                                 setSoal()
                             }
                         }
@@ -80,11 +84,10 @@ class ActivitySoal : AppCompatActivity() {
         soalKe.text = (current + 1).toString()
         soalTotal.text = listSoal.size.toString()
         textSoal.text = listSoal[current].soal
-        listSoal[current].pilihan?.toMutableList()?.shuffle()
-        pilihanA.text = "A. ${listSoal[current].pilihan?.get(0)?.pilihan}"
-        pilihanB.text = "B. ${listSoal[current].pilihan?.get(1)?.pilihan}"
-        pilihanC.text = "C. ${listSoal[current].pilihan?.get(2)?.pilihan}"
-        pilihanD.text = "D. ${listSoal[current].pilihan?.get(3)?.pilihan}"
-        pilihanE.text = "E. ${listSoal[current].pilihan?.get(4)?.pilihan}"
+        pilihanA.text = "${listSoal[current].pilihanShuffle?.get(0)?.pilihan}"
+        pilihanB.text = "${listSoal[current].pilihanShuffle?.get(1)?.pilihan}"
+        pilihanC.text = "${listSoal[current].pilihanShuffle?.get(2)?.pilihan}"
+        pilihanD.text = "${listSoal[current].pilihanShuffle?.get(3)?.pilihan}"
+        pilihanE.text = "${listSoal[current].pilihanShuffle?.get(4)?.pilihan}"
     }
 }
