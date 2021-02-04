@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.mediabelajarinteraktif.guru.ActivitySoal
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
 class WelcomeScreen : AppCompatActivity() {
     lateinit var btnNext: Button
@@ -25,7 +26,7 @@ class WelcomeScreen : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                val intent = Intent(this, ActivitySoal::class.java)
+                val intent = Intent(this, ActivityUtama::class.java)
                 startActivity(intent)
             }
         }

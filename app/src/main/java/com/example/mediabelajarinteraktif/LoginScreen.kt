@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.Button
 import com.example.mediabelajarinteraktif.guru.ActivitySoal
 import com.example.mediabelajarinteraktif.model.User
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 import kotlinx.android.synthetic.main.screen_login.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -38,7 +39,7 @@ class LoginScreen : AppCompatActivity() {
                                     putInt("user_level", it.user_level)
                                     apply()
                                 }
-                                val intent = Intent(this@LoginScreen, ActivitySoal::class.java)
+                                val intent = Intent(this@LoginScreen, ActivityUtama::class.java)
                                 startActivity(intent)
                             }
                         }
