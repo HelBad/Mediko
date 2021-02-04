@@ -139,73 +139,74 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/pilihanA"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:text="A. Pilihan Jawaban A"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:buttonTint="@color/colorOrange"
-                        android:textSize="15dp"/>
 
-                    <RadioButton
-                        android:id="@+id/pilihanB"
+                    <RadioGroup
+                        android:id="@+id/pilihanGroup"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:text="B. Pilihan Jawaban B"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:buttonTint="@color/colorOrange"
-                        android:textSize="15dp"/>
+                        android:layout_height="wrap_content">
 
-                    <RadioButton
-                        android:id="@+id/pilihanC"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:text="C. Pilihan Jawaban C"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:buttonTint="@color/colorOrange"
-                        android:textSize="15dp"/>
-                </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/pilihanA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="A. Pilihan Jawaban A"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:buttonTint="@color/colorOrange"
+                            android:textSize="15dp"/>
 
-                <LinearLayout
-                    android:id="@+id/jawaban2"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_weight="1"
-                    android:layout_margin="5dp"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:id="@+id/pilihanD"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:text="D. Pilihan Jawaban D"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:buttonTint="@color/colorOrange"
-                        android:textSize="15dp"/>
+                        <RadioButton
+                            android:id="@+id/pilihanB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="B. Pilihan Jawaban B"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:buttonTint="@color/colorOrange"
+                            android:textSize="15dp"/>
 
-                    <RadioButton
-                        android:id="@+id/pilihanE"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_gravity="center_vertical"
-                        android:text="E. Pilihan Jawaban E"
-                        android:textStyle="bold"
-                        android:textColor="@android:color/black"
-                        android:buttonTint="@color/colorOrange"
-                        android:textSize="15dp"/>
+                        <RadioButton
+                            android:id="@+id/pilihanC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="C. Pilihan Jawaban C"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:buttonTint="@color/colorOrange"
+                            android:textSize="15dp"/>
+
+                        <RadioButton
+                            android:id="@+id/pilihanD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="D. Pilihan Jawaban D"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:buttonTint="@color/colorOrange"
+                            android:textSize="15dp"/>
+
+                        <RadioButton
+                            android:id="@+id/pilihanE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="E. Pilihan Jawaban E"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            android:buttonTint="@color/colorOrange"
+                            android:textSize="15dp"/>
+
+                    </RadioGroup>
+
                 </LinearLayout>
             </LinearLayout>
 

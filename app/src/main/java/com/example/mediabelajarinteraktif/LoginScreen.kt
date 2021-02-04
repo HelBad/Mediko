@@ -39,8 +39,14 @@ class LoginScreen : AppCompatActivity() {
                                     putInt("user_level", it.user_level)
                                     apply()
                                 }
-                                val intent = Intent(this@LoginScreen, ActivityUtama::class.java)
-                                startActivity(intent)
+                                if(it.user_level == 1){
+                                    val intent = Intent(this@LoginScreen, ActivitySoal::class.java)
+                                    startActivity(intent)
+                                }
+                                else{
+                                    val intent = Intent(this@LoginScreen, ActivityUtama::class.java)
+                                    startActivity(intent)
+                                }
                             }
                         }
                     }
