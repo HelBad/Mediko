@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -55,7 +56,6 @@
         app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
         app:layout_constraintStart_toEndOf="@id/textQuestion"
         android:layout_marginLeft="5dp"
-        android:text="10"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 
@@ -76,7 +76,6 @@
         app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
         app:layout_constraintStart_toEndOf="@id/soalKe"
         android:layout_marginLeft="15dp"
-        android:text="20"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 
@@ -91,6 +90,16 @@
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="@id/scroll"
+        app:layout_constraintBottom_toBottomOf="@id/scroll"
+        app:layout_constraintStart_toStartOf="@id/scroll"
+        app:layout_constraintEnd_toEndOf="@id/scroll"/>
+
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
@@ -99,9 +108,11 @@
         app:layout_constraintBottom_toTopOf="@id/btnPrev">
 
         <LinearLayout
+            android:id="@+id/layoutSoal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <TextView
                 android:id="@+id/textSoal"
@@ -232,4 +243,5 @@
         android:src="@drawable/icon_lanjut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

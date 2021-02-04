@@ -24,9 +24,17 @@ class ActivitySoal : AppCompatActivity() {
     private var listJawaban : HashMap<Int, String> = HashMap()
     private var current = 0
 
+    private var nama : String? = null
+    private var noAbsen : String? = null
+    private var kelas : String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_soal)
+
+        nama = intent.getStringExtra("nama")
+        noAbsen = intent.getStringExtra("no_absen")
+        kelas = intent.getStringExtra("kelas")
 
         ApiClient().getService()
             .getSoal()
@@ -40,6 +48,8 @@ class ActivitySoal : AppCompatActivity() {
                                     soal.pilihanShuffle = soal.pilihan?.toMutableList()
                                     soal.pilihanShuffle?.shuffle()
                                 }
+                                layoutSoal.visibility = View.VISIBLE
+                                loading.visibility = View.GONE
                                 setSoal()
                             }
                         }

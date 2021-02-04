@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageView
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
+import kotlinx.android.synthetic.main.activity_latihan.*
 
 class ActivityLatihan : AppCompatActivity() {
     lateinit var btnStart: Button
@@ -22,6 +23,9 @@ class ActivityLatihan : AppCompatActivity() {
 
         btnStart.setOnClickListener {
             val intent = Intent(this, ActivitySoal::class.java)
+            intent.putExtra("nama", textNama.text.toString())
+            intent.putExtra("no_absen", textNomor.text.toString())
+            intent.putExtra("kelas", textKelas.text.toString())
             startActivity(intent)
         }
         homeLatihan.setOnClickListener {
