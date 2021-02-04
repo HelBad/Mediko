@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.mediabelajarinteraktif.ActivitySkor
+import com.example.mediabelajarinteraktif.R
 import kotlinx.android.synthetic.main.activity_soal.*
 
 class ActivitySoal : AppCompatActivity() {

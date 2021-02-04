@@ -6,6 +6,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Field
+import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
 
 class ApiClient {
@@ -20,7 +22,7 @@ class ApiClient {
 
     fun getRetrofit() : Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://mediko.ninofachrurozy.com/")
+            .baseUrl("https://ninofachrurozy.com/")
             .client(getInterceptor())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
@@ -30,5 +32,6 @@ class ApiClient {
 
 interface Users {
     @POST("login")
-    fun login(): Call<List<User>>
+    @FormUrlEncoded
+    fun login(@Field("username") username: String): Call<User>
 }

@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.mediabelajarinteraktif.siswa.ActivityLatihan
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 import kotlinx.android.synthetic.main.activity_skor.*
 
 class ActivitySkor : AppCompatActivity() {

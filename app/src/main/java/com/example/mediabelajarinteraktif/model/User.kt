@@ -1,5 +1,6 @@
 package com.example.mediabelajarinteraktif.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
@@ -28,7 +29,7 @@ class User(
 
     @SerializedName("user_level")
     @Expose
-    val user_level: Int?,
+    val user_level: Int = 0,
 
     @SerializedName("mapel")
     @Expose
@@ -37,4 +38,4 @@ class User(
     @SerializedName("nilai")
     @Expose
     val nilai: Int? = null
-)
+) : Parcelable
