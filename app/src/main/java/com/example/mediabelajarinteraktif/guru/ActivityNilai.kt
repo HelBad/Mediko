@@ -1,12 +1,21 @@
 package com.example.mediabelajarinteraktif.guru
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mediabelajarinteraktif.ApiClient
 import com.example.mediabelajarinteraktif.ExitScreen
 import com.example.mediabelajarinteraktif.R
+import com.example.mediabelajarinteraktif.model.User
+import kotlinx.android.synthetic.main.activity_nilai_guru.*
+import kotlinx.android.synthetic.main.screen_login.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class ActivityNilai : AppCompatActivity() {
     lateinit var soalNilaiGuru: ImageView
@@ -27,6 +36,29 @@ class ActivityNilai : AppCompatActivity() {
             val intent = Intent(this, ExitScreen::class.java)
             startActivity(intent)
         }
+
+        ApiClient().getService()
+            .getNilai()
+            .enqueue(object : Callback<List<User>> {
+                override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+                    if(response.code() == 200) {
+                        response.body().let {
+                            if(it != null) {
+                                loading.visibility = View.GONE
+                                rvNilai.setHasFixedSize(true)
+                                rvNilai.layoutManager = LinearLayoutManager(this@ActivityNilai)
+                                val adapter = AdapterNilai(it as ArrayList<User>)
+                                adapter.notifyDataSetChanged()
+                                rvNilai.adapter = adapter
+                            }
+                        }
+                    }
+                }
+
+                override fun onFailure(call: Call<List<User>>, t: Throwable) {
+                    t.message?.let { Log.d("API: ", it) }
+                }
+            })
     }
 
     override fun onStart() {
