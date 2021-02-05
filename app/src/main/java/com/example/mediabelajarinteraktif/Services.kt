@@ -30,7 +30,7 @@ interface Services {
         @Field("d") pilihanD: String,
         @Field("e") pilihanE: String,
         @Field("benar") benar: Int
-    ): Call<String>
+    ): Call<Status>
 
     @POST("edit_soal")
     @FormUrlEncoded
@@ -43,11 +43,11 @@ interface Services {
         @Field("d") pilihanD: String,
         @Field("e") pilihanE: String,
         @Field("benar") benar: Int
-    ): Call<String>
+    ): Call<Status>
 
     @POST("delete_soal")
     @FormUrlEncoded
-    fun deleteSoal(@Field("id") id: Int): Call<String>
+    fun deleteSoal(@Field("id") id: Int): Call<Status>
 
     @POST("user")
     @FormUrlEncoded
