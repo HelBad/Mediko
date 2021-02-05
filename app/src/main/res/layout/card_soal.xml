@@ -13,6 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_edit_soal"
             android:layout_margin="10dp"
             android:orientation="vertical">
             <TextView
