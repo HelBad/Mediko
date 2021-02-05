@@ -21,5 +21,5 @@ class ApiClient {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    fun getService(): Services = retrofit.create(Services::class.java)
+    fun getService() : Services = retrofit.create(Services::class.java)
 }

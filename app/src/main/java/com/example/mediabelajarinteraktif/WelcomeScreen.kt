@@ -29,8 +29,15 @@ class WelcomeScreen : AppCompatActivity() {
                 startActivity(intent)
             }
             else{
-                val intent = Intent(this, ActivityUtama::class.java)
-                startActivity(intent)
+                val userLevel = sharedPref.getInt("user_level", 0)
+                if(userLevel == 1){
+                    val intent = Intent(this, ActivitySoal::class.java)
+                    startActivity(intent)
+                }
+                else{
+                    val intent = Intent(this, ActivityUtama::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }
