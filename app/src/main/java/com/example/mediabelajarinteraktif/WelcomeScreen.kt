@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mediabelajarinteraktif.guru.ActivitySoal
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 
 class WelcomeScreen : AppCompatActivity() {
