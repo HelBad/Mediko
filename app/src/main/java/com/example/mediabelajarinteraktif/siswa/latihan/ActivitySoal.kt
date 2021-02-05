@@ -77,6 +77,27 @@ class ActivitySoal : AppCompatActivity() {
 
         btnSubmit.setOnClickListener {
             val intent = Intent(this, ActivitySkor::class.java)
+            var nilai = 0
+            var benar = 0
+            var salah = 0
+            mapJawabanSubmit.map {
+                if(it.value.isBenar == 1) {
+                    nilai += 5
+                    benar++
+                }
+                else{
+                    salah++
+                }
+            }
+
+            if(mapJawabanSubmit.size < listSoal.size) salah += listSoal.size - mapJawabanSubmit.size
+
+            intent.putExtra("nama", nama)
+            intent.putExtra("no_absen", noAbsen)
+            intent.putExtra("kelas", kelas)
+            intent.putExtra("benar", benar)
+            intent.putExtra("salah", salah)
+            intent.putExtra("nilai", nilai)
             startActivity(intent)
         }
 
@@ -118,15 +139,24 @@ class ActivitySoal : AppCompatActivity() {
         soalKe.text = (current + 1).toString()
         soalTotal.text = listSoal.size.toString()
         textSoal.text = listSoal[current].soal
+        when(mapJawabanView[current]){
+            "A" -> pilihanA.isChecked = true
+            "B" -> pilihanB.isChecked = true
+            "C" -> pilihanC.isChecked = true
+            "D" -> pilihanD.isChecked = true
+            "E" -> pilihanE.isChecked = true
+            else -> {
+                pilihanA.isChecked = false
+                pilihanB.isChecked = false
+                pilihanC.isChecked = false
+                pilihanD.isChecked = false
+                pilihanE.isChecked = false
+            }
+        }
         pilihanA.text = "${listSoal[current].pilihanShuffle?.get(0)?.pilihan}"
-        pilihanA.isChecked = mapJawabanView[current] == "A"
         pilihanB.text = "${listSoal[current].pilihanShuffle?.get(1)?.pilihan}"
-        pilihanB.isChecked = mapJawabanView[current] == "B"
         pilihanC.text = "${listSoal[current].pilihanShuffle?.get(2)?.pilihan}"
-        pilihanC.isChecked = mapJawabanView[current] == "C"
         pilihanD.text = "${listSoal[current].pilihanShuffle?.get(3)?.pilihan}"
-        pilihanD.isChecked = mapJawabanView[current] == "D"
         pilihanE.text = "${listSoal[current].pilihanShuffle?.get(4)?.pilihan}"
-        pilihanE.isChecked = mapJawabanView[current] == "E"
     }
 }

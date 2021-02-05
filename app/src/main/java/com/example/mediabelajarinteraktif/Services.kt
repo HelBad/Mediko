@@ -1,6 +1,7 @@
 package com.example.mediabelajarinteraktif
 
 import com.example.mediabelajarinteraktif.model.Soal
+import com.example.mediabelajarinteraktif.model.Status
 import com.example.mediabelajarinteraktif.model.User
 import retrofit2.Call
 import retrofit2.http.Field
@@ -60,8 +61,8 @@ interface Services {
     fun submitNilai(
         @Field("id") id: Int,
         @Field("nilai") nilai: Int,
-        @Field("nama") nama: Int,
-        @Field("no_absen") noAbsen: Int,
-        @Field("kelas") kelas: Int
-    ): Call<String>
+        @Field("nama") nama: String,
+        @Field("no_absen") noAbsen: String,
+        @Field("kelas") kelas: String
+    ): Call<Status>
 }
