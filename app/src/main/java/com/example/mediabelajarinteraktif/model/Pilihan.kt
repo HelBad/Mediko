@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class Pilihan(
+class Pilihan (
     @SerializedName("id")
     @Expose
     val id: Int = 0,

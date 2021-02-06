@@ -1,7 +1,6 @@
 package com.example.mediabelajarinteraktif.siswa.materi
 
 import android.content.Intent
-import android.media.MediaPlayer.OnPreparedListener
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -11,7 +10,6 @@ import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
-
 
 class ActivityVideo : AppCompatActivity() {
     lateinit var homeVideo: ImageView
@@ -42,8 +40,6 @@ class ActivityVideo : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
-            (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                    or View.SYSTEM_UI_FLAG_FULLSCREEN
-                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+            (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
 }

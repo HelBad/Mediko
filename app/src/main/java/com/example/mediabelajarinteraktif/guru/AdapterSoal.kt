@@ -4,13 +4,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.mediabelajarinteraktif.OnItemActionCallback
+import com.example.mediabelajarinteraktif.api.OnItemActionCallback
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.model.Soal
 import kotlinx.android.synthetic.main.card_soal.view.*
 
 class AdapterSoal(val listSoal: ArrayList<Soal>) : RecyclerView.Adapter<AdapterSoal.ViewHolderSoal>() {
-
     private var onItemEditCallback: OnItemActionCallback? = null
     private var onItemDeleteCallback: OnItemActionCallback? = null
 
@@ -36,13 +35,12 @@ class AdapterSoal(val listSoal: ArrayList<Soal>) : RecyclerView.Adapter<AdapterS
         return listSoal.size
     }
 
-    inner class ViewHolderSoal(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun bind(soal: Soal){
+    inner class ViewHolderSoal(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(soal: Soal) {
             itemView.soal.text = soal.soal
             soal.pilihan?.forEach { pil ->
                 if(pil.isBenar == 1) itemView.kunci.text = pil.pilihan
             }
-
             itemView.btn_edit_soal.setOnClickListener { onItemEditCallback?.onItemAction(soal) }
             itemView.btn_delete_soal.setOnClickListener { onItemDeleteCallback?.onItemAction(soal) }
         }

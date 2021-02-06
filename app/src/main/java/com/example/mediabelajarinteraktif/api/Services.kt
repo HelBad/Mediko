@@ -1,4 +1,4 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.api
 
 import com.example.mediabelajarinteraktif.model.Soal
 import com.example.mediabelajarinteraktif.model.Status

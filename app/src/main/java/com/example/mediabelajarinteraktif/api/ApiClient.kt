@@ -1,4 +1,4 @@
-package com.example.mediabelajarinteraktif
+package com.example.mediabelajarinteraktif.api
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -9,9 +9,7 @@ class ApiClient {
     private fun getInterceptor() : OkHttpClient {
         val logging = HttpLoggingInterceptor()
         logging.level = HttpLoggingInterceptor.Level.BODY
-        return OkHttpClient.Builder()
-            .addInterceptor(logging)
-            .build()
+        return OkHttpClient.Builder().addInterceptor(logging).build()
     }
 
     private val retrofit = Retrofit.Builder()
@@ -20,5 +18,6 @@ class ApiClient {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    fun getService() : Services = retrofit.create(Services::class.java)
+    fun getService() : Services = retrofit.create(
+        Services::class.java)
 }
