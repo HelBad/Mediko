@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".guru.ActivityNilai">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarNilaiGuru"
         android:layout_width="match_parent"
@@ -43,6 +45,16 @@
         android:layout_toLeftOf="@id/closeNilaiGuru"
         android:layout_marginBottom="15dp"
         tools:listitem="@layout/card_nilai"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_above="@id/soalNilaiGuru"
+        android:layout_below="@id/toolbarNilaiGuru"
+        android:layout_toRightOf="@id/soalNilaiGuru"
+        android:layout_toLeftOf="@id/closeNilaiGuru" />
 
     <ImageView
         android:id="@+id/soalNilaiGuru"
