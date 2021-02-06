@@ -53,10 +53,10 @@ class WelcomeScreen : AppCompatActivity() {
     }
 
     var mp = MediaPlayer()
+
 //    override fun onUserLeaveHint() {
-//        mp.pause()
-//        finishAffinity()
 //        super.onUserLeaveHint()
+//        mp.pause()
 //    }
 
     override fun onAttachedToWindow() {
@@ -64,5 +64,10 @@ class WelcomeScreen : AppCompatActivity() {
         mp = MediaPlayer.create(applicationContext, R.raw.backsound)
         mp.isLooping = true
         mp.start()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mp.pause()
     }
 }

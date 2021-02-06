@@ -79,14 +79,13 @@
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 
-    <TextView
+    <Chronometer
         android:id="@+id/timerSoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="20dp"
-        android:text="01 : 30 : 00"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
 

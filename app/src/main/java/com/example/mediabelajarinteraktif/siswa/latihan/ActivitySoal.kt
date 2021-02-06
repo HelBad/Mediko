@@ -2,10 +2,10 @@ package com.example.mediabelajarinteraktif.siswa.latihan
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediabelajarinteraktif.ActivitySkor
 import com.example.mediabelajarinteraktif.ApiClient
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.model.Pilihan
@@ -49,6 +49,9 @@ class ActivitySoal : AppCompatActivity() {
                                 layoutSoal.visibility = View.VISIBLE
                                 loading.visibility = View.GONE
                                 setSoal()
+
+                                timerSoal.base = SystemClock.elapsedRealtime()
+                                timerSoal.start()
                             }
                         }
                     }
@@ -98,6 +101,7 @@ class ActivitySoal : AppCompatActivity() {
             intent.putExtra("benar", benar)
             intent.putExtra("salah", salah)
             intent.putExtra("nilai", nilai)
+            intent.putExtra("time", (SystemClock.elapsedRealtime()-timerSoal.base))
             startActivity(intent)
         }
 
