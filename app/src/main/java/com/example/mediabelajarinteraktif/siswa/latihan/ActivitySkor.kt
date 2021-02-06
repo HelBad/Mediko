@@ -48,14 +48,14 @@ class ActivitySkor : AppCompatActivity() {
             seconds = TimeUnit.MILLISECONDS.toSeconds(time)
         }
 
-        textNama.text = "Nama: ${nama}"
-        textNoAbsen.text = "No Absen: ${noAbsen}"
-        textKelas.text = "Kelas: ${kelas}"
-        textCorrect.text = "Correct questions: ${benar}"
-        textIncorrect.text = "Inorrect questions: ${salah}"
-        textFinalScore.text = "Final Score: ${nilai}"
-        if(time > 60000) textTime.text = "Time elapsed: ${minutes} menit ${seconds} detik"
-        else textTime.text = "Time elapsed: ${seconds} detik"
+        textNama.text = "${nama}"
+        textNoAbsen.text = "${noAbsen}"
+        textKelas.text = "${kelas}"
+        textCorrect.text = "${benar}"
+        textIncorrect.text = "${salah}"
+        textFinalScore.text = "${nilai}"
+        if(time > 60000) textTime.text = "${minutes} menit ${seconds} detik"
+        else textTime.text = "${seconds} detik"
         textLulus.text = if(nilai < 75) "TIDAK LULUS" else "LULUS"
 
         btnTryAgain.setOnClickListener {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +7,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background"
     tools:context=".siswa.latihan.ActivitySoal">
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarSoal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
         android:minHeight="?attr/actionBarSize">
         <ImageView
             android:layout_width="40dp"
@@ -42,8 +40,7 @@
         android:id="@+id/textQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_below="@id/toolbarSoal"
         android:layout_marginLeft="20dp"
         android:text="Question :"
         android:textColor="@android:color/black"
@@ -53,8 +50,8 @@
         android:id="@+id/soalKe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
-        app:layout_constraintStart_toEndOf="@id/textQuestion"
+        android:layout_below="@id/toolbarSoal"
+        android:layout_toRightOf="@id/textQuestion"
         android:layout_marginLeft="5dp"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
@@ -62,8 +59,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
-        app:layout_constraintStart_toEndOf="@id/soalKe"
+        android:layout_below="@id/toolbarSoal"
+        android:layout_toRightOf="@id/soalKe"
         android:layout_marginHorizontal="5dp"
         android:text="/"
         android:textColor="@android:color/black"
@@ -73,8 +70,8 @@
         android:id="@+id/soalTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
-        app:layout_constraintStart_toEndOf="@id/soalKe"
+        android:layout_below="@id/toolbarSoal"
+        android:layout_toRightOf="@id/soalKe"
         android:layout_marginLeft="15dp"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
@@ -83,8 +80,8 @@
         android:id="@+id/timerSoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/toolbarSoal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_below="@id/toolbarSoal"
+        android:layout_alignParentEnd="true"
         android:layout_marginRight="20dp"
         android:textColor="@android:color/black"
         android:textSize="15dp" />
@@ -92,20 +89,19 @@
     <ProgressBar
         android:id="@+id/loading"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:indeterminateTint="@color/colorPrimary"
-        app:layout_constraintTop_toTopOf="@id/scroll"
-        app:layout_constraintBottom_toBottomOf="@id/scroll"
-        app:layout_constraintStart_toStartOf="@id/scroll"
-        app:layout_constraintEnd_toEndOf="@id/scroll"/>
+        android:layout_above="@+id/btnSubmit"
+        android:layout_below="@+id/textQuestion"
+        android:layout_centerHorizontal="true"/>
 
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/textQuestion"
-        app:layout_constraintBottom_toTopOf="@id/btnPrev">
-
+        android:layout_height="match_parent"
+        android:layout_below="@id/textQuestion"
+        android:layout_above="@id/btnSubmit"
+        android:scrollbars="none">
         <LinearLayout
             android:id="@+id/layoutSoal"
             android:layout_width="match_parent"
@@ -138,12 +134,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
-
                     <RadioGroup
                         android:id="@+id/pilihanGroup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-
                         <RadioButton
                             android:id="@+id/pilihanA"
                             android:layout_width="match_parent"
@@ -203,14 +197,10 @@
                             android:textColor="@android:color/black"
                             android:buttonTint="@color/colorOrange"
                             android:textSize="15dp"/>
-
                     </RadioGroup>
-
                 </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
-
     </ScrollView>
 
     <Button
@@ -222,9 +212,8 @@
         android:text="Submit"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
 
     <ImageView
         android:id="@+id/btnPrev"
@@ -232,8 +221,7 @@
         android:layout_height="50dp"
         android:layout_margin="15dp"
         android:src="@drawable/icon_kembali"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_alignParentBottom="true"/>
 
     <ImageView
         android:id="@+id/btnNext"
@@ -241,7 +229,6 @@
         android:layout_height="50dp"
         android:layout_margin="15dp"
         android:src="@drawable/icon_lanjut"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
