@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediabelajarinteraktif.ActivitySkor
 import com.example.mediabelajarinteraktif.ApiClient
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.model.Pilihan
