@@ -23,8 +23,8 @@ class AdapterNilai(val listNilai: ArrayList<User>) : RecyclerView.Adapter<Adapte
         return listNilai.size
     }
 
-    inner class ViewHolderNilai(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun bind(user: User){
+    inner class ViewHolderNilai(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(user: User) {
             itemView.namaNilai.text = user.nama
             itemView.absenNilai.text = user.noAbsen.toString()
             itemView.kelasNilai.text = user.kelas
