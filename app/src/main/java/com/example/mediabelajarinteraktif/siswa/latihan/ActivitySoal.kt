@@ -2,10 +2,11 @@ package com.example.mediabelajarinteraktif.siswa.latihan
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediabelajarinteraktif.api.ApiClient
+import com.example.mediabelajarinteraktif.ApiClient
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.model.Pilihan
 import com.example.mediabelajarinteraktif.model.Soal
@@ -15,10 +16,12 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class ActivitySoal : AppCompatActivity() {
+
     private var listSoal : ArrayList<Soal> = ArrayList()
     private var mapJawabanSubmit : HashMap<Int, Pilihan> = HashMap()
     private var mapJawabanView : HashMap<Int, String> = HashMap()
     private var current = 0
+
     private var nama : String? = null
     private var noAbsen : String? = null
     private var kelas : String? = null
@@ -31,29 +34,36 @@ class ActivitySoal : AppCompatActivity() {
         noAbsen = intent.getStringExtra("no_absen")
         kelas = intent.getStringExtra("kelas")
 
-        ApiClient().getService().getSoal().enqueue(object : Callback<List<Soal>> {
-            override fun onResponse(call: Call<List<Soal>>, response: Response<List<Soal>>) {
-                if(response.code() == 200) {
-                    response.body().let {
-                        if(it != null) {
-                            listSoal = it as ArrayList<Soal>
-                            for (soal in listSoal) {
-                                soal.pilihanShuffle = soal.pilihan?.toMutableList()
-                                soal.pilihanShuffle?.shuffle()
+        ApiClient().getService()
+            .getSoal()
+            .enqueue(object : Callback<List<Soal>> {
+                override fun onResponse(call: Call<List<Soal>>, response: Response<List<Soal>>) {
+                    if(response.code() == 200) {
+                        response.body().let {
+                            if(it != null){
+                                listSoal = it as ArrayList<Soal>
+                                for (soal in listSoal){
+                                    soal.pilihanShuffle = soal.pilihan?.toMutableList()
+                                    soal.pilihanShuffle?.shuffle()
+                                }
+                                layoutSoal.visibility = View.VISIBLE
+                                loading.visibility = View.GONE
+                                setSoal()
+
+                                timerSoal.base = SystemClock.elapsedRealtime()
+                                timerSoal.start()
                             }
-                            layoutSoal.visibility = View.VISIBLE
-                            loading.visibility = View.GONE
-                            setSoal()
                         }
                     }
                 }
-            }
-            override fun onFailure(call: Call<List<Soal>>, t: Throwable) {
-                t.message?.let { Log.d("API: ", it) }
-            }
-        })
+
+                override fun onFailure(call: Call<List<Soal>>, t: Throwable) {
+                    t.message?.let { Log.d("API: ", it) }
+                }
+            })
 
         btnPrev.visibility = View.GONE
+
         btnPrev.setOnClickListener {
             current -= 1
             setSoal()
@@ -78,18 +88,20 @@ class ActivitySoal : AppCompatActivity() {
                     nilai += 5
                     benar++
                 }
-                else {
+                else{
                     salah++
                 }
             }
 
             if(mapJawabanSubmit.size < listSoal.size) salah += listSoal.size - mapJawabanSubmit.size
+
             intent.putExtra("nama", nama)
             intent.putExtra("no_absen", noAbsen)
             intent.putExtra("kelas", kelas)
             intent.putExtra("benar", benar)
             intent.putExtra("salah", salah)
             intent.putExtra("nilai", nilai)
+            intent.putExtra("time", (SystemClock.elapsedRealtime()-timerSoal.base))
             startActivity(intent)
         }
 
@@ -122,14 +134,16 @@ class ActivitySoal : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
-            (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+            (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                    or View.SYSTEM_UI_FLAG_FULLSCREEN
+                    or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
 
     private fun setSoal() {
         soalKe.text = (current + 1).toString()
         soalTotal.text = listSoal.size.toString()
         textSoal.text = listSoal[current].soal
-        when(mapJawabanView[current]) {
+        when(mapJawabanView[current]){
             "A" -> pilihanA.isChecked = true
             "B" -> pilihanB.isChecked = true
             "C" -> pilihanC.isChecked = true
