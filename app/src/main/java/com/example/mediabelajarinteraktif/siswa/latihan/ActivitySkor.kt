@@ -42,7 +42,7 @@ class ActivitySkor : AppCompatActivity() {
 
         if(time > 60000) {
             minutes = TimeUnit.MILLISECONDS.toMinutes(time)
-            seconds = TimeUnit.MILLISECONDS.toSeconds(time)-(TimeUnit.MILLISECONDS.toMinutes(time)*60000)
+            seconds = TimeUnit.MILLISECONDS.toSeconds(time)-(TimeUnit.MILLISECONDS.toMinutes(time)*60)
         }
         else {
             seconds = TimeUnit.MILLISECONDS.toSeconds(time)
