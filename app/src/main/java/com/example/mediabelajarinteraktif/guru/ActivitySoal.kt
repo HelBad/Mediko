@@ -178,7 +178,38 @@ class ActivitySoal : AppCompatActivity() {
                                 })
                                 adapter.setOnItemDeleteCallback(object : OnItemActionCallback {
                                     override fun onItemAction(data: Any) {
-                                        TODO("Not yet implemented")
+                                        ApiClient().getService()
+                                            .deleteSoal(current)
+                                            .enqueue(object : Callback<Status> {
+                                                override fun onResponse(call: Call<Status>, response: Response<Status>) {
+                                                    if (response.code() == 200) {
+                                                        response.body().let { statusDelete ->
+                                                            if(statusDelete?.status == "success"){
+                                                                tambahSoal.text = "Add"
+                                                                current = 0
+                                                                textSoal.text = null
+                                                                uraianA.text = null
+                                                                uraianB.text = null
+                                                                uraianC.text = null
+                                                                uraianD.text = null
+                                                                uraianE.text = null
+
+                                                                kunciA.isChecked = false
+                                                                kunciB.isChecked = false
+                                                                kunciC.isChecked = false
+                                                                kunciD.isChecked = false
+                                                                kunciE.isChecked = false
+
+                                                                loadSoal()
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                override fun onFailure(call: Call<Status>, t: Throwable) {
+                                                    t.message?.let { Log.d("API: ", t.message) }
+                                                }
+                                            })
                                     }
                                 })
                                 rvSoal.adapter = adapter
