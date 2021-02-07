@@ -8,6 +8,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mediabelajarinteraktif.api.ApiClient
 import com.example.mediabelajarinteraktif.R
+import com.example.mediabelajarinteraktif.model.Pilihan
 import com.example.mediabelajarinteraktif.model.Status
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 import kotlinx.android.synthetic.main.activity_skor.*
@@ -27,6 +28,7 @@ class ActivitySkor : AppCompatActivity() {
     private var nilai : Int = 0
     private var minutes = 0L
     private var seconds = 0L
+    private var jawaban : HashMap<Int, Pilihan> = HashMap()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +41,7 @@ class ActivitySkor : AppCompatActivity() {
         benar = intent.getIntExtra("benar", 0)
         salah = intent.getIntExtra("salah", 0)
         nilai = intent.getIntExtra("nilai", 0)
+        jawaban = intent.getSerializableExtra( "jawaban") as HashMap<Int, Pilihan>
 
         if(time > 60000) {
             minutes = TimeUnit.MILLISECONDS.toMinutes(time)
