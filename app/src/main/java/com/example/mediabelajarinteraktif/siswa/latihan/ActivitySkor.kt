@@ -56,7 +56,7 @@ class ActivitySkor : AppCompatActivity() {
         textFinalScore.text = "${nilai}"
         if(time > 60000) textTime.text = "${minutes} menit ${seconds} detik"
         else textTime.text = "${seconds} detik"
-        textLulus.text = if(nilai < 75) "TIDAK LULUS" else "LULUS"
+        textLulus.text = if(nilai < 70) "TIDAK LULUS" else "LULUS"
 
         btnTryAgain.setOnClickListener {
             val intent = Intent(this, ActivityLatihan::class.java)
