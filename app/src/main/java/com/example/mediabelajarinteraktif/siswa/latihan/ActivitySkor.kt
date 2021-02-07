@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mediabelajarinteraktif.api.ApiClient
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mediabelajarinteraktif.R
+import com.example.mediabelajarinteraktif.api.ApiClient
 import com.example.mediabelajarinteraktif.model.Pilihan
+import com.example.mediabelajarinteraktif.model.Soal
 import com.example.mediabelajarinteraktif.model.Status
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 import kotlinx.android.synthetic.main.activity_skor.*
-import kotlinx.android.synthetic.main.activity_skor.btnSubmit
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -28,6 +29,7 @@ class ActivitySkor : AppCompatActivity() {
     private var nilai : Int = 0
     private var minutes = 0L
     private var seconds = 0L
+    private var soal : ArrayList<Soal> = ArrayList()
     private var jawaban : HashMap<Int, Pilihan> = HashMap()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +43,7 @@ class ActivitySkor : AppCompatActivity() {
         benar = intent.getIntExtra("benar", 0)
         salah = intent.getIntExtra("salah", 0)
         nilai = intent.getIntExtra("nilai", 0)
+        soal = intent.getSerializableExtra( "soal") as ArrayList<Soal>
         jawaban = intent.getSerializableExtra( "jawaban") as HashMap<Int, Pilihan>
 
         if(time > 60000) {
@@ -60,6 +63,13 @@ class ActivitySkor : AppCompatActivity() {
         if(time > 60000) textTime.text = "${minutes} menit ${seconds} detik"
         else textTime.text = "${seconds} detik"
         textLulus.text = if(nilai < 75) "TIDAK LULUS" else "LULUS"
+
+        rvPembahasan.setHasFixedSize(true)
+        rvPembahasan.layoutManager = LinearLayoutManager(this@ActivitySkor)
+        val adapter = AdapterSkor(soal, jawaban)
+        adapter.notifyDataSetChanged()
+        loading.visibility = View.GONE
+        rvPembahasan.adapter = adapter
 
         btnTryAgain.setOnClickListener {
             val intent = Intent(this, ActivityLatihan::class.java)

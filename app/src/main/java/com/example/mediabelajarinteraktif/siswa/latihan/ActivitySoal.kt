@@ -98,6 +98,7 @@ class ActivitySoal : AppCompatActivity() {
             intent.putExtra("salah", salah)
             intent.putExtra("nilai", nilai)
             intent.putExtra("time", (SystemClock.elapsedRealtime()-timerSoal.base))
+            intent.putExtra("soal", listSoal)
             intent.putExtra("jawaban", mapJawabanSubmit)
             startActivity(intent)
         }
