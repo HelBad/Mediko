@@ -58,11 +58,13 @@ class ActivitySoal : AppCompatActivity() {
         })
 
         btnPrev.visibility = View.GONE
+        btnSubmit.visibility = View.GONE
         btnPrev.setOnClickListener {
             current -= 1
             setSoal()
             btnPrev.visibility = if(current == 0) View.GONE else View.VISIBLE
             btnNext.visibility = View.VISIBLE
+            btnSubmit.visibility = View.GONE
         }
 
         btnNext.setOnClickListener {
@@ -70,6 +72,7 @@ class ActivitySoal : AppCompatActivity() {
             setSoal()
             btnPrev.visibility = View.VISIBLE
             btnNext.visibility = if(current == listSoal.size - 1) View.GONE else View.VISIBLE
+            btnSubmit.visibility = if(current == listSoal.size - 1) View.VISIBLE else View.GONE
         }
 
         btnSubmit.setOnClickListener {

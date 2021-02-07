@@ -40,257 +40,296 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbarSoal"
-        android:layout_marginTop="15dp"
-        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
         android:text="Your Result : "
         android:textStyle="bold"
         android:textColor="@android:color/black"
         android:textSize="15dp"/>
 
-    <ScrollView
+    <LinearLayout
         android:id="@+id/scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/buttons"
         android:layout_below="@id/textSoal"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="15dp">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="No. Absen"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textNoAbsen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textKelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Correct Questions"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textCorrect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Incorrect Questions"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textIncorrect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Time Elapsed"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Final Score"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textFinalScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="KKM"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textKkm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="70"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="Status Kelulusan"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/textLulus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPembahasan"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Nama"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textNama"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="No. Absen"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textNoAbsen"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Kelas"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textKelas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Correct Questions"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textCorrect"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Incorrect Questions"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textIncorrect"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Time Elapsed"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Final Score"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textFinalScore"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:layout_marginHorizontal="50dp"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="130dp"
-                    android:layout_height="wrap_content"
-                    android:text="Status Kelulusan"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:text=":"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/black" />
-
-                <TextView
-                    android:id="@+id/textLulus"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@android:color/black" />
-            </LinearLayout>
+                android:layout_height="match_parent"
+                tools:listitem="@layout/card_pembahasan"/>
         </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/buttons"
