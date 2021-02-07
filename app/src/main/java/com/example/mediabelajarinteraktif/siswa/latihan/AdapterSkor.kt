@@ -10,7 +10,7 @@ import com.example.mediabelajarinteraktif.model.Pilihan
 import com.example.mediabelajarinteraktif.model.Soal
 import kotlinx.android.synthetic.main.card_pembahasan.view.*
 
-class AdapterSkor(private val listSoal: ArrayList<Soal>, val listJawaban: Map<Int, Pilihan>) : RecyclerView.Adapter<AdapterSkor.ViewHolderPembahasan>() {
+class AdapterSkor(private val listSoal: ArrayList<Soal>, private val listJawaban: Map<Int, Pilihan>) : RecyclerView.Adapter<AdapterSkor.ViewHolderPembahasan>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderPembahasan {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.card_pembahasan, parent, false)
@@ -18,7 +18,7 @@ class AdapterSkor(private val listSoal: ArrayList<Soal>, val listJawaban: Map<In
     }
 
     override fun onBindViewHolder(holder: ViewHolderPembahasan, position: Int) {
-        holder.bind(listSoal[position], listJawaban[listSoal[position].id])
+        holder.bind(listSoal[position], listJawaban[position])
     }
 
     override fun getItemCount(): Int {
