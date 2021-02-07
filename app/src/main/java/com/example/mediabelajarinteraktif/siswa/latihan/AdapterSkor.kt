@@ -10,7 +10,8 @@ import com.example.mediabelajarinteraktif.model.Pilihan
 import com.example.mediabelajarinteraktif.model.Soal
 import kotlinx.android.synthetic.main.card_pembahasan.view.*
 
-class AdapterSkor(private val listSoal: ArrayList<Soal>, private val listJawaban: Map<Int, Pilihan>) : RecyclerView.Adapter<AdapterSkor.ViewHolderPembahasan>() {
+class AdapterSkor(private val listSoal: ArrayList<Soal>, private val listJawaban: Map<Int, Pilihan>) :
+    RecyclerView.Adapter<AdapterSkor.ViewHolderPembahasan>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderPembahasan {
         val inflater = LayoutInflater.from(parent.context)
         val view = inflater.inflate(R.layout.card_pembahasan, parent, false)
@@ -25,22 +26,24 @@ class AdapterSkor(private val listSoal: ArrayList<Soal>, private val listJawaban
         return listSoal.size
     }
 
-    inner class ViewHolderPembahasan(itemView: View) : RecyclerView.ViewHolder(itemView){
-        fun bind(soal: Soal, jawaban: Pilihan?){
+    inner class ViewHolderPembahasan(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(soal: Soal, jawaban: Pilihan?) {
             var kunci : String ? = null
             soal.pilihan?.forEach {
                 if(it.isBenar == 1) kunci = it.pilihan
             }
-
-            if(jawaban?.isBenar == 1){
-                itemView.a.text = "BENAR"
-                itemView.a.setTextColor(ContextCompat.getColor(itemView.context, android.R.color.holo_blue_bright))
+            if(jawaban?.isBenar == 1) {
+                itemView.benarSalah.text = "BENAR"
+                itemView.benarSalah.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorAccent))
+                itemView.status.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorAccent))
+                itemView.textStatus.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorAccent))
             }
-            else{
-                itemView.a.text = "SALAH"
-                itemView.a.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorRed))
+            else {
+                itemView.benarSalah.text = "SALAH"
+                itemView.benarSalah.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorRed))
+                itemView.status.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorRed))
+                itemView.textStatus.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorRed))
             }
-
             itemView.namaNilai.text = soal.soal
             itemView.absenNilai.text = kunci
             itemView.kelasNilai.text = jawaban?.pilihan

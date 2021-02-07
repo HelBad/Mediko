@@ -40,12 +40,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbarSoal"
-        android:layout_marginTop="10dp"
         android:layout_marginHorizontal="30dp"
-        android:text="Your Result : "
+        android:text="Your Result"
         android:textStyle="bold"
         android:textColor="@android:color/black"
-        android:textSize="15dp"/>
+        android:textSize="16dp"/>
 
     <LinearLayout
         android:id="@+id/scroll"
@@ -54,7 +53,7 @@
         android:layout_above="@id/buttons"
         android:layout_below="@id/textSoal"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="10dp">
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -323,7 +322,6 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPembahasan"
                 android:layout_width="match_parent"
@@ -338,9 +336,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                />
-
+                app:layout_constraintEnd_toEndOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
