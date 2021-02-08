@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ScrollView
+import android.widget.Toast
 import com.example.mediabelajarinteraktif.R
 
 class ActivityJenisapbn : AppCompatActivity() {
@@ -33,18 +34,22 @@ class ActivityJenisapbn : AppCompatActivity() {
         jenisapbnPengertian.setOnClickListener {
             val intent = Intent(this, ActivityPengertianapbn::class.java)
             startActivity(intent)
+            finish()
         }
         jenisapbnSumber.setOnClickListener {
             val intent = Intent(this, ActivitySumberapbn::class.java)
             startActivity(intent)
+            finish()
         }
         jenisapbnMekanisme.setOnClickListener {
             val intent = Intent(this, ActivityMekanismeapbn::class.java)
             startActivity(intent)
+            finish()
         }
         jenisapbnMateri.setOnClickListener {
             val intent = Intent(this, ActivityMateri::class.java)
             startActivity(intent)
+            finish()
         }
 
         scrollupJenisapbn.setOnClickListener {
@@ -59,5 +64,11 @@ class ActivityJenisapbn : AppCompatActivity() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, ActivityMateri::class.java)
+        startActivity(intent)
+        finish()
     }
 }

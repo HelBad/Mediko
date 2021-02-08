@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import com.example.mediabelajarinteraktif.ExitScreen
 import com.example.mediabelajarinteraktif.R
 
@@ -22,6 +23,7 @@ class ActivityGlosarium : AppCompatActivity() {
         homeGlosarium.setOnClickListener {
             val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
+            finish()
         }
         closeGlosarium.setOnClickListener {
             val intent = Intent(this, ExitScreen::class.java)
@@ -33,5 +35,11 @@ class ActivityGlosarium : AppCompatActivity() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, ActivityUtama::class.java)
+        startActivity(intent)
+        finish()
     }
 }

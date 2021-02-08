@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mediabelajarinteraktif.R
@@ -74,6 +75,7 @@ class ActivitySkor : AppCompatActivity() {
         btnTryAgain.setOnClickListener {
             val intent = Intent(this, ActivityLatihan::class.java)
             startActivity(intent)
+            finish()
         }
         btnSubmit.setOnClickListener {
             val sharedPref = getSharedPreferences("auth", Context.MODE_PRIVATE)
@@ -85,6 +87,7 @@ class ActivitySkor : AppCompatActivity() {
                             if (it?.status == "success") {
                                 val intent = Intent(this@ActivitySkor, ActivityUtama::class.java)
                                 startActivity(intent)
+                                finish()
                             }
                         }
                     }
@@ -101,4 +104,6 @@ class ActivitySkor : AppCompatActivity() {
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
+
+    override fun onBackPressed() {}
 }

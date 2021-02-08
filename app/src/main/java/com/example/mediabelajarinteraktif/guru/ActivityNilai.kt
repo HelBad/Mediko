@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mediabelajarinteraktif.api.ApiClient
@@ -30,6 +31,7 @@ class ActivityNilai : AppCompatActivity() {
         soalNilaiGuru.setOnClickListener {
             val intent = Intent(this, ActivitySoal::class.java)
             startActivity(intent)
+            finish()
         }
         closeNilaiGuru.setOnClickListener {
             val intent = Intent(this, ExitScreen::class.java)
@@ -61,5 +63,11 @@ class ActivityNilai : AppCompatActivity() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, ActivitySoal::class.java)
+        startActivity(intent)
+        finish()
     }
 }

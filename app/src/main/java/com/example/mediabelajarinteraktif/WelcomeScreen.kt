@@ -6,6 +6,7 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mediabelajarinteraktif.guru.ActivitySoal
 import com.example.mediabelajarinteraktif.siswa.ActivityUtama
@@ -50,11 +51,6 @@ class WelcomeScreen : AppCompatActivity() {
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
 
-//    override fun onUserLeaveHint() {
-//        super.onUserLeaveHint()
-//        mp.pause()
-//    }
-
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
         mp = MediaPlayer.create(applicationContext, R.raw.backsound)
@@ -65,5 +61,9 @@ class WelcomeScreen : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         mp.pause()
+    }
+
+    override fun onBackPressed() {
+        finishAffinity()
     }
 }

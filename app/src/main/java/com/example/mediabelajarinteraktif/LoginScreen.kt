@@ -41,10 +41,12 @@ class LoginScreen : AppCompatActivity() {
                                 if(it.user_level == 1) {
                                     val intent = Intent(this@LoginScreen, ActivitySoal::class.java)
                                     startActivity(intent)
+                                    finish()
                                 }
                                 else {
                                     val intent = Intent(this@LoginScreen, ActivityUtama::class.java)
                                     startActivity(intent)
+                                    finish()
                                 }
                             }
                         }

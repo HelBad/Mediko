@@ -1,10 +1,12 @@
 package com.example.mediabelajarinteraktif.guru
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mediabelajarinteraktif.api.ApiClient
@@ -34,6 +36,7 @@ class ActivitySoal : AppCompatActivity() {
         nilaiSoalGuru.setOnClickListener {
             val intent = Intent(this, ActivityNilai::class.java)
             startActivity(intent)
+            finish()
         }
         closeSoalGuru.setOnClickListener {
             val intent = Intent(this, ExitScreen::class.java)
@@ -200,4 +203,6 @@ class ActivitySoal : AppCompatActivity() {
             }
         })
     }
+
+    override fun onBackPressed() {}
 }

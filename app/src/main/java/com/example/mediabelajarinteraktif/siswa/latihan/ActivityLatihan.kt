@@ -31,12 +31,13 @@ class ActivityLatihan : AppCompatActivity() {
                 intent.putExtra("no_absen", textNomor.text.toString())
                 intent.putExtra("kelas", textKelas.text.toString())
                 startActivity(intent)
+                finish()
             }
         }
-
         homeLatihan.setOnClickListener {
             val intent = Intent(this, ActivityUtama::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
@@ -44,5 +45,11 @@ class ActivityLatihan : AppCompatActivity() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, ActivityUtama::class.java)
+        startActivity(intent)
+        finish()
     }
 }

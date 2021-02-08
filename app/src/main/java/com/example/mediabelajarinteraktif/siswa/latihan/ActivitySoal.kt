@@ -5,11 +5,13 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.mediabelajarinteraktif.api.ApiClient
 import com.example.mediabelajarinteraktif.R
 import com.example.mediabelajarinteraktif.model.Pilihan
 import com.example.mediabelajarinteraktif.model.Soal
+import com.example.mediabelajarinteraktif.siswa.ActivityUtama
 import kotlinx.android.synthetic.main.activity_soal.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -101,6 +103,7 @@ class ActivitySoal : AppCompatActivity() {
             intent.putExtra("soal", listSoal)
             intent.putExtra("jawaban", mapJawabanSubmit)
             startActivity(intent)
+            finish()
         }
 
         pilihanGroup.setOnCheckedChangeListener { _, _ ->
@@ -158,5 +161,9 @@ class ActivitySoal : AppCompatActivity() {
         pilihanC.text = "${listSoal[current].pilihanShuffle?.get(2)?.pilihan}"
         pilihanD.text = "${listSoal[current].pilihanShuffle?.get(3)?.pilihan}"
         pilihanE.text = "${listSoal[current].pilihanShuffle?.get(4)?.pilihan}"
+    }
+
+    override fun onBackPressed() {
+        Toast.makeText(this, "Finish the question, can't go back", Toast.LENGTH_SHORT).show()
     }
 }

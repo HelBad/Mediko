@@ -1,9 +1,12 @@
 package com.example.mediabelajarinteraktif
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
+import com.example.mediabelajarinteraktif.guru.ActivitySoal
 
 class ExitScreen : AppCompatActivity() {
     lateinit var btnYes: Button
@@ -28,5 +31,9 @@ class ExitScreen : AppCompatActivity() {
         super.onStart()
         this.window.decorView.systemUiVisibility =
             (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
+    }
+
+    override fun onBackPressed() {
+        finish()
     }
 }
