@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import com.example.mediabelajarinteraktif.api.ApiClient
 import com.example.mediabelajarinteraktif.guru.ActivitySoal
 import com.example.mediabelajarinteraktif.model.User
@@ -27,6 +28,7 @@ class LoginScreen : AppCompatActivity() {
         btnLogin.setOnClickListener {
             ApiClient().getService().login(textUsername.text.toString()).enqueue(object : Callback<User> {
                 override fun onResponse(call: Call<User>, response: Response<User>) {
+                    Toast.makeText(this@LoginScreen, "Mohon tunggu sebentar", Toast.LENGTH_SHORT).show()
                     if(response.code() == 200) {
                         response.body().let {
                             if(it != null) {
@@ -53,6 +55,7 @@ class LoginScreen : AppCompatActivity() {
                     }
                 }
                 override fun onFailure(call: Call<User>, t: Throwable) {
+                    Toast.makeText(this@LoginScreen, "Username Salah", Toast.LENGTH_SHORT).show()
                     t.message?.let { Log.d("API: ", it) }
                 }
             })

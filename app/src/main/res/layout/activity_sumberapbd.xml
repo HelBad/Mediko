@@ -36,19 +36,12 @@
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/animasiSumberapbd"
-        android:layout_width="160dp"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbarSumberapbd"
-        android:src="@drawable/animasi_guruperempuan" />
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbarSumberapbd"
         android:layout_toLeftOf="@id/menuSumberapbd"
-        android:layout_toRightOf="@id/animasiSumberapbd"
+        android:layout_marginLeft="15dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/bg_papan1">
         <ScrollView

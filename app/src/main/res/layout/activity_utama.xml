@@ -34,23 +34,13 @@
             android:textStyle="bold"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/animasiUtama"
-        android:layout_width="160dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="40dp"
-        android:layout_below="@id/toolbarUtama"
-        android:src="@drawable/animasi_gurulaki" />
-
     <LinearLayout
         android:id="@+id/kontenHome1"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/toolbarUtama"
-        android:layout_toRightOf="@id/animasiUtama"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="25dp">
+        android:layout_marginHorizontal="25dp">
         <LinearLayout
             android:id="@+id/menuHome1"
             android:layout_width="0dp"
@@ -184,9 +174,7 @@
         android:id="@+id/kontenHome2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="25dp"
-        android:layout_toRightOf="@id/animasiUtama"
+        android:layout_marginHorizontal="25dp"
         android:layout_below="@id/kontenHome1">
         <LinearLayout
             android:id="@+id/menuHome5"
